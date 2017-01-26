@@ -1,3 +1,5 @@
+var myObj = {
+  createMyElement: function() {
 var wrapper = document.createElement('div');
 wrapper.classList.add('wrapper');
 wrapper.style.height = '1000px';
@@ -199,3 +201,7 @@ var button = document.createElement('button');
 button.classList.add('button');
 button.innerHTML = 'Проверить мои результаты';
 wrapper1.appendChild(button);
+  }
+};
+
+myObj.createMyElement();
