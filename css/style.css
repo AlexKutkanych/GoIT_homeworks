@@ -3,6 +3,28 @@
   padding: 0;
 }
 
+.wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+
+h2 {
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  margin-bottom: 45px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.wrapper1 {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .question {
   font-family: Arial, sans-serif;
   margin: 0 0 10px 20px;
