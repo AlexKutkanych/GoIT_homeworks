@@ -1,8 +1,7 @@
-
+/*OLD VERSION*/
 var wrapper = document.createElement('div');
 wrapper.classList.add('wrapper');
-var body = document.querySelector('body');
-body.appendChild(wrapper);
+document.body.appendChild(wrapper);
 
 var h2 = document.createElement('h2');
 h2.innerHTML = 'Тест по программированию';
@@ -23,6 +22,8 @@ function addLabel(classes, parent) {
   var element = document.createElement('label');
   element.classList.add(classes);
   parent.appendChild(element);
+  // element.htmlFor = 'input_id';
+  return element;
 }
 
 function addAnswer(classes, text, parent) {
@@ -30,6 +31,7 @@ function addAnswer(classes, text, parent) {
   element.classList.add(classes);
   element.setAttribute('type', 'checkbox');
   element.setAttribute('value', 'text');
+  element.setAttribute('id', 'input_id');
   parent.appendChild(element);
 }
 
@@ -41,16 +43,17 @@ function addVariant(variant, parent) {
 
 //q1
 addQuestion('question', '1. Вопрос №1', wrapper1);
-addLabel('answer', wrapper1);
-addAnswer('input-class', 'answer11', wrapper1);
-addVariant('Вариант ответа №1', wrapper1);
-addAnswer('input-class', 'answer22', wrapper1);
-addVariant('Вариант ответа №2', wrapper1);
-addAnswer('input-class', 'answer23', wrapper1);
-addVariant('Вариант ответа №3', wrapper1);
+addAnswer('input-class', 'answer11', addLabel('answer', wrapper1));
+addVariant('Вариант ответа №1', addLabel('answer', wrapper1));
 
-//q2
 
+var label = addLabel('answer', wrapper1);
+addAnswer('input-class', 'answer12', label);
+addVariant('Вариант ответа №2', label);
+
+var label = addLabel('answer', wrapper1);
+addAnswer('input-class', 'answer12', label);
+addVariant('Вариант ответа №3', label);
 
 
 //BUTTON
@@ -61,6 +64,69 @@ button.innerHTML = 'Проверить мои результаты';
 wrapper1.appendChild(button);
 
 
+// var wrapper = document.createElement('div');
+// wrapper.classList.add('wrapper');
+// document.body.appendChild(wrapper);
+//
+// var h2 = document.createElement('h2');
+// h2.innerHTML = 'Тест по программированию';
+// wrapper.appendChild(h2);
+//
+// var wrapper1 = document.createElement('div');
+// wrapper1.classList.add('wrapper1');
+// wrapper.appendChild(wrapper1);
+//
+// function createTest(tag, classes, question, parent, name, attrib) {
+//   var element = document.createElement(tag);
+//   element.classList.add(classes);
+//   element.innerHTML = question;
+//   element.setAttribute('type', name);
+//   element.setAttribute('value', attrib);
+//   parent.appendChild(element);
+// }
+
+
+
+// function addLabel(classes, parent) {
+//   var element = document.createElement('label');
+//   element.classList.add(classes);
+//   parent.appendChild(element);
+//   return element;
+// }
+//
+// function addAnswer(classes, text, parent) {
+//   var element = document.createElement('input');
+//   element.classList.add(classes);
+//   element.setAttribute('type', 'checkbox');
+//   element.setAttribute('value', 'text');
+//   parent.appendChild(element);
+// }
+//
+// function addVariant(variant, parent) {
+//   var element = document.createElement('span');
+//   element.innerHTML = variant;
+//   parent.appendChild(element);
+// }
+
+//q1
+// createTest('h3', 'question', '1. Вопрос №1', wrapper1, false, false);
+// createTest('label', 'answer', '', wrapper1, false, false);
+// createTest('input11', 'input-class', '', wrapper1, 'checkbox', false);
+// createTest('span', 'false', 'Вариант ответа №1', 'label', false, false);
+// createTest('h3', 'question', '1. Вопрос №1', wrapper1, false, false);
+// createTest('h3', 'question', '1. Вопрос №1', wrapper1, false, false);
+// createTest('h3', 'question', '1. Вопрос №1', wrapper1, false, false);
+
+//q2
+
+
+
+//BUTTON
+
+// var button = document.createElement('button');
+// button.classList.add('button');
+// button.innerHTML = 'Проверить мои результаты';
+// wrapper1.appendChild(button);
 
 
 
@@ -68,7 +134,18 @@ wrapper1.appendChild(button);
 
 
 
-/*OLD VERSION*/
+
+
+
+
+
+
+
+
+
+
+
+/*ANCIENT VERSION*/
 
 // var myObj = {
 //   createMyElement: function() {
