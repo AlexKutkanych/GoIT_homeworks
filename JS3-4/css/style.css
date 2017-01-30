@@ -27,11 +27,11 @@ h2 {
 
 .question {
   font-family: Arial, sans-serif;
-  margin: 0 0 10px 20px;
+  margin: 20px 0 10px 20px;
 }
 
 .answer {
-  width: 150px;
+  max-height: 20px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin-right: 600px;
@@ -39,10 +39,6 @@ h2 {
 
 .input-class  {
   margin: 0 10px 0 30px;
-}
-
-.input-third {
-  margin-bottom: 20px;
 }
 
 .button {
