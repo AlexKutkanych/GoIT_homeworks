@@ -13,6 +13,7 @@
 
 
 .form {
+  position: relative;
   width: 60%;
   height: 300px;
   margin: 0 auto;
@@ -51,7 +52,7 @@ label {
   height: 37px;
   position: absolute;
   top: 48px;
-  left: 686px;
+  left: 17rem;
   border: 1px solid grey;
   box-shadow: 0 0 37px 1px lightgray;
   border-radius: 5px;
