@@ -42,7 +42,11 @@ $label1.on('click', function(){
   $help1.delay(500).fadeIn(1000).fadeOut(5000);
   // $help1.fadeIn(500).fadeOut(500);
 });
-// console.log('help1');
+
+var $attr1 = $input1.attr('tabIndex', '1');
+$attr1.focus(function(){                            //involve tab key
+    $help1.delay(500).fadeIn(1000).fadeOut(5000);
+});
 
 //help2
 
@@ -64,6 +68,11 @@ $label2.on('click', function(){
   $help2.delay(500).fadeIn(1000).fadeOut(5000);
 });
 
+var $attr2 = $input2.attr('tabIndex', '2');
+$attr2.focus(function(){                            //involve tab key
+    $help2.delay(500).fadeIn(1000).fadeOut(5000);
+});
+
 //help3
 
 var $help3 = $('<p>Your home and work address.</p>');
@@ -80,7 +89,13 @@ $input3.mouseover(function(){
 });
 
 $label3.on('click', function(){
-  $help3.delay(500).fadeIn(1000).fadeOut(5000);
+  $help3.show();
+  // $help3.delay(500).fadeIn(1000).fadeOut(5000);
+});
+
+var $attr3 = $input3.attr('tabIndex', '3');
+$attr3.focus(function(){                            //involve tab key
+    $help3.fadeIn(1000).fadeOut(5000);
 });
 
 var $button = $('<button>Show help!</button>');
@@ -88,7 +103,7 @@ $newDiv.append($button);
 $button.attr('type', 'button');
 
 $button.on('click', function(){
-  $help1.fadeIn(500);
-  $help2.fadeIn(500);
-  $help3.fadeIn(500);
+  $help1.toggle();
+  $help2.toggle();
+  $help3.toggle();
 });
