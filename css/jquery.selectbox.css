@@ -7,7 +7,7 @@
 .jquery-selectbox {
 	position: relative;
 	height: 20px;
-	border: 1px solid #d2ad63;
+	border: 1px solid blue;
 	width: 230px;
 	z-index: 0;
 	float: left;
@@ -21,7 +21,7 @@
 }
 .jquery-selectbox.selecthover {
 	border-color: #9F7627;
-	background-color: #FFFCDF;
+	background-color: lightblue;
 	background-image: url("../img/bg-TextFieldFocused.gif");
 	z-index: 700;
 }
@@ -38,7 +38,7 @@
 	top: 16px;
 	padding: 2px;
 	left: 0px;
-	background: #fffcdf;
+	background: lightblue;
 	width: 200px;
 	height: 120px;
 	overflow-x: hidden;

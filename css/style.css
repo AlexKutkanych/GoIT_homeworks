@@ -79,6 +79,7 @@ input[type=checkbox]:checked + label:hover::before {
   display: inline-block;
   cursor: pointer;
   background: url(../img/checkbox-sprite.png);
+  margin-top: 5px;
 }
 
 .niceCheck input {
@@ -93,4 +94,8 @@ input[type=checkbox]:checked + label:hover::before {
 
 .select {
   clear: both;
+}
+
+.option {
+  margin-left: 30px;
 }

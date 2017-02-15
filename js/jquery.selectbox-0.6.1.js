@@ -29,7 +29,7 @@ jQuery.fn.selectbox = function(options){
 		selectbox.addClass('selecthover');
 		jQuery(document).bind('click', onBlurList);
 		return listObj;
-	}
+	};
 	var hideList = function(listObj) {
 		var selectbox = listObj.parents('.' + settings.className + '');
 		listObj.slideUp(settings.animationSpeed, function(){
@@ -38,7 +38,7 @@ jQuery.fn.selectbox = function(options){
 		});
 		jQuery(document).unbind('click', onBlurList);
 		return listObj;
-	}
+	};
 	var onBlurList = function(e) {
 		var trgt = e.target;
 		var currentListElements = jQuery('.' + settings.className + '-list:visible').parent().find('*').andSelf();
@@ -46,14 +46,14 @@ jQuery.fn.selectbox = function(options){
 			hideList( jQuery('.' + commonClass + '-list') );
 		}
 		return false;
-	}
+	};
 
 	/* Processing settings */
 	settings = jQuery.extend(settings, options || {});
 	/* Wrapping all passed elements */
 	return this.each(function() {
 		var _this = jQuery(this);
-		if(_this.filter(':visible').length == 0 && !settings.replaceInvisible)
+		if(_this.filter(':visible').length === 0 && !settings.replaceInvisible)
 			return;
 		var replacement = jQuery(
 			'<div class="' + settings.className + ' ' + commonClass + '">' +
@@ -63,25 +63,25 @@ jQuery.fn.selectbox = function(options){
 			'</div>'
 		);
 		jQuery('option', _this).each(function(k,v){
-			var v = jQuery(v);
+			var v = $(v);
 			var listElement =  jQuery('<span class="' + settings.className + '-item value-'+v.val()+' item-'+k+'">' + v.text() + '</span>');
 			listElement.click(function(){
 				var thisListElement = jQuery(this);
 				var thisReplacment = thisListElement.parents('.'+settings.className);
 				var thisIndex = thisListElement[0].className.split(' ');
-				for( k1 in thisIndex ) {
+				for(var k1 in thisIndex ) {
 					if(/^item-[0-9]+$/.test(thisIndex[k1])) {
 						thisIndex = parseInt(thisIndex[k1].replace('item-',''), 10);
 						break;
 					}
-				};
+				}
 				var thisValue = thisListElement[0].className.split(' ');
 				for( k1 in thisValue ) {
 					if(/^value-.+$/.test(thisValue[k1])) {
 						thisValue = thisValue[k1].replace('value-','');
 						break;
 					}
-				};
+				}
 				thisReplacment
 					.find('.' + settings.className + '-currentItem')
 					.text(thisListElement.text());
@@ -126,7 +126,7 @@ jQuery.fn.selectbox = function(options){
 		var thisListBoxSize = thisListBox.find('.' + settings.className + '-item').length;
 		if(thisListBoxSize > settings.listboxMaxSize)
 			thisListBoxSize = settings.listboxMaxSize;
-		if(thisListBoxSize == 0)
+		if(thisListBoxSize === 0)
 			thisListBoxSize = 1;
 		var thisListBoxWidth = Math.round(_this.width() + 5);
 		if(jQuery.browser.safari)
@@ -137,14 +137,14 @@ jQuery.fn.selectbox = function(options){
 			height: thisListBoxSize + 'em'
 		});
 	});
-}
+};
 jQuery.fn.unselectbox = function(){
 	var commonClass = 'jquery-custom-selectboxes-replaced';
 	return this.each(function() {
 		var selectToRemove = jQuery(this).filter('.' + commonClass);
 		selectToRemove.replaceWith(selectToRemove.find('select').show());
 	});
-}
+};
 
 $(function(){
 	$('#default-usage-select').selectbox();
