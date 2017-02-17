@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.data-attributes.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/9-10.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+    <link rel="stylesheet" href="css/jquery.selectbox.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>NBA block party Carousel</h1>
+      <div class="jcarousel-wrapper">
+          <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+              <ul>
+                <li><img src="img/1.jpg" width="1024" height="768" alt=""></li>
+                <li><img src="img/2.jpg" width="1024" height="768" alt=""></li>
+                <li><img src="img/3.jpg" width="1024" height="768" alt=""></li>
+              </ul>
+          </div>
+          <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+          <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+      </div>
+    <div class="form">
+      <div class="jquery">
+        <h2>JQuery</h2>
+        <h4>What's your favourite NBA player?</h4>
+        <form class="" action="index.html" method="post">
+          <span class="niceCheck"><input type="checkbox" name="" value="" id="" class="jquery-input"><span class="option">Va1</span></span><br>
+          <span class="niceCheck"><input type="checkbox" name="" value="" id="" class="jquery-input"><span class="option">Va2</span></span><br>
+          <span class="niceCheck"><input type="checkbox" name="" value="" id="" class="jquery-input"><span class="option">Va3</span></span><br>
+          <span class="niceCheck"><input type="checkbox" name="" value="" id="" class="jquery-input"><span class="option">Va4</span></span><br>
+        </form>
+      </div>
+      <div class="pure_css">
+        <h2>Pure CSS</h2>
+        <span>What's your favourite season?</span>
+        <form class="" action="index.html" method="post">
+          <input type="checkbox" name="" value="" id="winter"> <label for="winter">Winter</label><br>
+          <input type="checkbox" name="" value="" id="summer"> <label for="summer">Summer</label><br>
+          <input type="checkbox" name="" value="" id="spring"> <label for="spring">Spring</label><br>
+          <input type="checkbox" name="" value="" id="autumn"> <label for="autumn">Autumn</label><br>
+        </form>
+      </div>
+    </div>
+
+    <div class="demoTarget">
+		   <select id="default-usage-select">
+				<option value="--">Select your favorite NBA Player</option>
+				<option value="01">Wadee</option>
+				<option value="02">Lebron</option>
+				<option value="03">Durant</option>
+				<option value="04">Westbrook</option>
+				<option value="05">Sefolosha</option>
+			</select>
+	</div>
+
+
+    </div>
+  </body>
+</html>
