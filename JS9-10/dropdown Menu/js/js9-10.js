@@ -20,10 +20,10 @@ $(function(){
   $listItem.append('<ul></ul>');
   var $submenu = $listItem.find('ul');
   $submenu.addClass('submenu');
-  $submenu.append('<li><a>Submenu</a></li>');
-  $submenu.append('<li><a>Submenu</a></li>');
-  $submenu.append('<li><a>Submenu</a></li>');
-  $submenu.append('<li><a>Submenu</a></li>');
+  $submenu.append('<li><a class="submenu-link">Submenu 1</a></li>');
+  $submenu.append('<li><a class="submenu-link">Submenu 2</a></li>');
+  $submenu.append('<li><a class="submenu-link">Submenu 3</a></li>');
+  $submenu.append('<li><a  class="submenu-link">Submenu 4</a></li>');
   $submenu.css('display', 'none');
   $submenu.find('a').addClass('sub1');
   $('a').attr('href', '#');
@@ -44,13 +44,13 @@ $(function(){
        }
    );
 
-  $('.menu ul a').mouseover(function(){
+  $('.submenu-link').mouseover(function(){
     $(this).stop().animate({
       'margin-left': '30px',
       'background-color': '#87CEEB',
     }, 500);
   });
-  $('.menu ul a').mouseout(function(){
+  $('.submenu-link').mouseout(function(){
     $(this).stop().animate({
       'margin-left': '0px',
       'background-color': 'rgb(0, 155, 255)',
@@ -63,9 +63,12 @@ $(function(){
   $links.on('click', function(){
       var $sub1 = $(this).siblings('.submenu1');
       $sub1.slideToggle();
-      $sub1.animate({
-        'background-color': 'green',
-        'margin-left': '20px'
+      var $sublink = $('.submenu1 a');
+      $sublink.hover(function(){
+        $(this).stop(true).animate({
+        'background-color': '#87CEEB',
+        'text-indent': '30px'
       }, 1000);
+    });
   });
 });
