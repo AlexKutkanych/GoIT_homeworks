@@ -9,6 +9,18 @@
   margin: 0 auto;
 }
 
-h1 {
+h6 {
   color: green;
+}
+
+
+
+@mixin button {
+    border-radius: 4px;
+    border: 4px solid black;
+}
+
+.search-button {
+    @include button;
+    background-color: blue;
 }
