@@ -1,26 +1,162 @@
+$main-bg-color: #2a2d32;
+// $main-font-color: #717171;
+$main-font: Arial, sans-serif;
+$hover-color: #248cec;
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.wrapper {
-  width: 1000px;
-  height: 1000px;
+.wrapper-top {
+  width: 1160px;
+  height: 100px;
   margin: 0 auto;
+  background-color: lightgrey;
 }
 
-h6 {
-  color: green;
+.menu-top {
+  float: left;
+  margin-top: 30px;
+  height: 55px;
+  background-color: $main-bg-color;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+
+}
+
+ul {
+  width: 560px;
+  li {
+    display: inline-block;
+    list-style: none;
+    width: 19%;
+    border-right: 1px solid #181a1d;
+    text-align: center;
+  }
+  a {
+    text-transform: uppercase;
+    line-height: 55px;
+    font-family: $main-font;
+    font-size: 12px;
+  }
+}
+
+.cart {
+  float: right;
+  width: 600px;
+  height: 55px;
+  background-color: $main-bg-color;
+  margin-top: 30px;
+}
+
+.menu-top li:active {
+  background-color: $hover-color;
+}
+
+.menu-top a:hover {
+  color: #f4b60d;
+}
+
+//slider
+.wrapper-slider {
+  @extend .wrapper-top;
+  clear: both;
+  height: 470px;
+  background: url(../img/slider-pic.jpg) no-repeat;
+}
+
+//news
+
+//services
+.wrapper-services {
+  @extend .wrapper-top;
+  width: 100%;
+  height: 504px;
+  background-color: $main-bg-color
+}
+
+.inner {
+  width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
+  font-family: $main-font;
+}
+
+.services {
+  width: 25%;
+  height: 312px;
+  float: left;
+  border: 1px solid red;
 }
 
 
-
-@mixin button {
-    border-radius: 4px;
-    border: 4px solid black;
+.serv-pic1 {
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/services.png);
+  background-position: -170px 0;
 }
 
-.search-button {
-    @include button;
-    background-color: blue;
+.serv-pic2 {
+  @extend .serv-pic1;
+  background-position: -490px 0;
+}
+
+.serv-pic3 {
+  @extend .serv-pic1;
+  background-position: -755px 0;
+}
+
+.serv-pic4 {
+  @extend .serv-pic1;
+  background-position: -1017px 0;
+}
+
+//bottom logos
+
+.wrapper-logos {
+  @extend .wrapper-top;
+
+}
+
+.logo1 {
+  display: block;
+  float: left;
+  height: 62px;
+  width: 143px;
+  background-image: url(../img/bot_logos.png);
+  margin-right: 10px;
+  opacity: 0.65;
+}
+
+.logo2 {
+  @extend .logo1;
+  background-position: -148px 0;
+}
+
+.logo3 {
+  @extend .logo1;
+  width: 184px;
+  background-position: -295px 0;
+}
+
+.logo4 {
+  @extend .logo1;
+  background-position: -480px 0;
+}
+
+.logo5 {
+  @extend .logo1;
+  background-position: -628px 0;
+}
+
+.logo6 {
+  @extend .logo1;
+  background-position: -776px 0;
 }
