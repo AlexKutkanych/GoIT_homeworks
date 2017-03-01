@@ -178,6 +178,91 @@ li {
   float: left;
   height: 100%;
   width: 50%;
+  font-family: $main-font;
+  .name {
+    margin: 58px 0 46px 2px;
+    font-size: 24px;
+  }
+  :nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .news-img {
+    width: 151px;
+    height: 151px;
+    display: block;
+    float: left;
+    background-image: url(../img/news.png);
+    clear: both;
+    margin: 0 32px 28px 0;
+  }
+  .post {
+    float: left;
+    width: 65%;
+    p {
+      color: #8a8a8a;
+    }
+
+    h3:hover, .author {
+      color: $hover-color-menu;
+      cursor: pointer;
+    }
+  }
+}
+
+section {
+  position: relative;
+}
+
+.month-sqr {
+  width: 40px;
+  height: 40px;
+  background-color: $hover-color-menu;
+  position: absolute;
+  top: 12px;
+  left: -18px;
+}
+
+.month {
+  position: relative;
+  top: 13px;
+  left: 0;
+  color: #f0f7fe;
+  font-size: 13px;
+  margin-left: 11px;
+}
+
+.date-sqr {
+  @extend .month-sqr;
+  background-color: #f4b60d;
+  top: 52px;
+}
+
+.date {
+  @extend .month;
+  font-size: 16px;
+  color: #2a2b2e;
+  font-weight: bold;
+}
+
+.post2 {
+  .month-sqr{
+    @extend .month-sqr;
+    top: 192px;
+  }
+  .date-sqr {
+    @extend .date-sqr;
+    top: 230px;
+  }
+}
+
+.img-post2 {
+  background-position: 0 150px;
+}
+
+section {
+  h3 {
+    text-transform: capitalize;
+  }
 }
 
 .banner-place {

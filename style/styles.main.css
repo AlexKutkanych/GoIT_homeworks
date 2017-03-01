@@ -176,6 +176,103 @@ footer,
   float: left;
   height: 100%;
   width: 50%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.news .name,
+.banner-place .name {
+  margin: 58px 0 46px 2px;
+  font-size: 24px;
+}
+
+.news :nth-child(2),
+.banner-place :nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.news .news-img,
+.banner-place .news-img {
+  width: 151px;
+  height: 151px;
+  display: block;
+  float: left;
+  background-image: url("../img/news.png");
+  clear: both;
+  margin: 0 32px 28px 0;
+}
+
+.news .post,
+.banner-place .post {
+  float: left;
+  width: 65%;
+}
+
+.news .post p,
+.banner-place .post p {
+  color: #8a8a8a;
+}
+
+.news .post h3:hover,
+.banner-place .post h3:hover,
+.news .post .author,
+.banner-place .post .author {
+  color: #248cec;
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+}
+
+.month-sqr,
+.date-sqr,
+.post2 .date-sqr,
+.post2 .month-sqr {
+  width: 40px;
+  height: 40px;
+  background-color: #248cec;
+  position: absolute;
+  top: 12px;
+  left: -18px;
+}
+
+.month,
+.date {
+  position: relative;
+  top: 13px;
+  left: 0;
+  color: #f0f7fe;
+  font-size: 13px;
+  margin-left: 11px;
+}
+
+.date-sqr,
+.post2 .date-sqr {
+  background-color: #f4b60d;
+  top: 52px;
+}
+
+.date {
+  font-size: 16px;
+  color: #2a2b2e;
+  font-weight: bold;
+}
+
+.post2 .date-sqr,
+.post2 .month-sqr {
+  top: 192px;
+}
+
+.post2 .date-sqr {
+  top: 230px;
+}
+
+.img-post2 {
+  background-position: 0 150px;
+}
+
+section h3 {
+  text-transform: capitalize;
 }
 
 .wrapper-logos {
