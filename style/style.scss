@@ -10,18 +10,50 @@ $footer-a-color: #797a7c;
   padding: 0;
 }
 
+//top
 .wrapper-top {
   width: 1160px;
   height: 100px;
   margin: 0 auto;
 }
 
-.menu-top {
+//main logo
+.main-logo {
+  width: 70%;
+  height: 115px;
   float: left;
-  margin-top: 30px;
-  height: 55px;
-  background-color: $main-bg-color;
+  .slogan {
+    font-family: $main-font;
+    font-size: 30px;
+    color: #434343;
+    font-weight: bold;
+    margin: 36px 0 -4px 0;
+  }
+  .subslogan {
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-size: 12px;
+    color:#8c8c8c;
+    letter-spacing: 3px;
+    margin-left: 57px;
+  }
 }
+
+.logo-top {
+  display: block;
+  float: left;
+  width: 52px;
+  height: 36px;
+  background-image: url(../img/main_logo.png);
+  margin: 43px 0 0 3px;
+}
+
+.social-netw {
+  float: right;
+  width: 30%;
+  height: 115px;
+}
+
 
 a {
   color: white;
@@ -35,7 +67,12 @@ li {
 }
 
 .menu-top {
+  float: left;
+  clear: both;
   width: 560px;
+  height: 57px;
+  background-color: $main-bg-color;
+  margin-bottom: 41px;
   li {
     display: inline-block;
     width: 19%;
@@ -44,18 +81,21 @@ li {
   }
   a {
     text-transform: uppercase;
-    line-height: 55px;
+    line-height: 57px;
     font-family: $main-font;
-    font-size: 12px;
+    font-size: 13px;
   }
+}
+.active {
+  background-color: $hover-color-menu;
 }
 
 .cart {
   float: right;
   width: 600px;
-  height: 55px;
+  height: 57px;
   background-color: $main-bg-color;
-  margin-top: 30px;
+  margin-bottom: 41px;
 }
 
 .menu-top a:hover {
@@ -182,6 +222,7 @@ li {
   .name {
     margin: 58px 0 46px 2px;
     font-size: 24px;
+    font-weight: bold;
   }
   :nth-child(2) {
     margin-bottom: 10px;
