@@ -5,6 +5,7 @@
 
 .wrapper-top,
 .wrapper-slider,
+.wrapper-articles,
 .wrapper-services,
 .wrapper-news,
 footer,
@@ -107,6 +108,35 @@ li {
   clear: both;
   height: 470px;
   background: url("../img/slider-pic.jpg") no-repeat;
+}
+
+.wrapper-articles {
+  height: 338px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.wrapper-articles section {
+  width: 33%;
+  float: left;
+}
+
+.wrapper-articles a {
+  color: black;
+}
+
+.number1 {
+  float: left;
+  width: 90px;
+  font-size: 64px;
+  color: #e9e9ea;
+}
+
+.content1 {
+  float: right;
+}
+
+.read-more:hover {
+  color: #248cec;
 }
 
 .wrapper-services,
@@ -448,14 +478,36 @@ footer,
   line-height: 60px;
   color: #797a7c;
   font-size: 12px;
+  float: left;
 }
 
-.contacts :first-child {
-  margin: 0 55px 0 26px;
+.contacts .location,
+.contacts .phone,
+.contacts .email {
+  background-image: url("../img/footer-icons.png");
+  width: 13px;
+  height: 16px;
+  float: left;
+  margin: 23px 7px 0 3px;
 }
 
 .contacts :nth-child(2) {
-  margin-right: 69px;
+  margin: 0 36px 0 3px;
+}
+
+.contacts .phone {
+  background-position: 12px 0;
+  width: 12px;
+}
+
+.contacts :nth-child(4) {
+  margin-right: 41px;
+}
+
+.contacts .email {
+  background-position: 30px 0;
+  width: 18px;
+  margin-right: 10px;
 }
 
 .contacts :last-child {
