@@ -1,4 +1,4 @@
- $(function(){
+ {(function($){
    $.fn.carousel = function(options){
 
 
@@ -49,10 +49,9 @@
           $currentLeftValue -= 1024;
           $elementsList.animate({left: $currentLeftValue + "px"}, settings.animateRight);
         }
-          return this;
       });
   };
-})(jQuery);
+})(jQuery);}
 
 // $(function(){
 //  var $buttonLeft = $('.carousel-arrow-left');
