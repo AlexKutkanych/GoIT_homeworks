@@ -266,6 +266,7 @@ li {
   // }
   a {
     color: black;
+    display: block;
   }
 }
 
@@ -319,17 +320,26 @@ li {
 .read-more {
   font-size: 13px;
   font-weight: bold;
+  span {
+    display: block;
+    float: left;
+  }
 }
 .read-more:hover {
   color: $hover-color-menu;
 }
 
-// .read-more:hover::after {
-//   display: none;
-// }
-//
-// .read-more::after {
-// }
+.arrow {
+  width: 10px;
+  height: 9px;
+  background: url(../img/arrow.png) 0 0;
+  margin: 3px 10px;
+}
+
+p:hover .arrow {
+  background-position: 0 9px;
+}
+
 
 //services
 .wrapper-services {
