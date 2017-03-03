@@ -85,14 +85,14 @@ footer,
 }
 
 .social-netw .rss {
-  width: 20px;
+  width: 22px;
   background-position: -30px 0;
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 .social-netw .linkedin {
   width: 20px;
-  background-position: -52px 0;
+  background-position: -58px 0;
   margin-right: 9px;
 }
 
@@ -102,7 +102,7 @@ footer,
 }
 
 .social-netw .facebook:hover {
-  background-position: 0 -21px;
+  background-position: 0 -19px;
 }
 
 .social-netw .twitter:hover {
@@ -114,11 +114,11 @@ footer,
 }
 
 .social-netw .linkedin:hover {
-  background-position: -52px -21px;
+  background-position: -58px -19px;
 }
 
 .social-netw .skype:hover {
-  background-position: 17px -21px;
+  background-position: 17px -29px;
 }
 
 a {
