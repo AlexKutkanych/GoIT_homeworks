@@ -373,7 +373,7 @@ li {
   }
 }
 
-.service1 a:hover {
+.service1 a:hover, .service2 a:hover, .service3 a:hover, .service4 a:hover,{
   color: $hover-color;
 }
 

@@ -372,7 +372,10 @@ footer,
   font-size: 18px;
 }
 
-.service1 a:hover {
+.service1 a:hover,
+.service2 a:hover,
+.service3 a:hover,
+.service4 a:hover {
   color: #f4b60d;
 }
 
