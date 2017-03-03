@@ -6,7 +6,6 @@
 }
 
 .wrapper-top,
-.wrapper-slider,
 .wrapper-articles,
 .wrapper-services,
 .wrapper-news,
@@ -17,6 +16,7 @@ footer,
   width: 1160px;
   height: 100px;
   margin: 0 auto;
+  clear: both;
 }
 
 .main-logo {
@@ -90,10 +90,6 @@ li {
   font-size: 13px;
 }
 
-.active {
-  background-color: #248cec;
-}
-
 .cart {
   float: right;
   width: 600px;
@@ -106,15 +102,67 @@ li {
   color: #f4b60d;
 }
 
-.wrapper-slider {
-  clear: both;
+.jcarousel-wrapper {
+  margin: 0 auto;
+  width: 1160px;
   height: 470px;
-  background: url("../img/slider-pic.jpg") no-repeat;
+  clear: both;
+  position: relative;
+}
+
+/** Carousel **/
+
+.jcarousel {
+  overflow: hidden;
+  width: 1160px;
+  height: 470px;
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel li {
+  float: left;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  min-width: 14px;
+  background: red;
+  color: #4E443C;
+  padding: 3px;
+  text-align: center;
+  margin-right: 2px;
+  opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
 
 .wrapper-articles {
   height: 338px;
   font-family: "Ubuntu", sans-serif;
+  clear: both;
 }
 
 .wrapper-articles section {
@@ -424,6 +472,13 @@ section h3 {
   padding: 1.2em;
   text-transform: uppercase;
   border: 1px solid #e8e8e8;
+}
+
+.accordion_trigger::before {
+  content: '\002B';
+  font-size: 13px;
+  margin-right: 10px;
+  border-right: 1px solid red;
 }
 
 /* меняем цвет фона у активного переключателя */
