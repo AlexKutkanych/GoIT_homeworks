@@ -378,6 +378,7 @@ footer,
 }
 
 .services {
+  position: relative;
   width: 260px;
   height: 312px;
   float: left;
@@ -394,6 +395,7 @@ footer,
 .service3 a:hover,
 .service4 a:hover {
   color: #f4b60d;
+  cursor: pointer;
 }
 
 .serv-pic1,
@@ -404,18 +406,84 @@ footer,
   height: 260px;
   background-image: url("../img/services.png");
   background-position: -170px 0;
+  position: relative;
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+  height: 260px;
+  width: 260px;
+  background-color: #248cec;
+  opacity: .9;
+  display: none;
+}
+
+.block1 span,
+.block2 span,
+.block3 span,
+.block4 span {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 100px;
+  left: 110px;
+}
+
+.serv-pic1:hover .block1,
+.serv-pic2:hover .block1,
+.serv-pic3:hover .block1,
+.serv-pic4:hover .block1,
+.serv-pic1:hover .block2,
+.serv-pic2:hover .block2,
+.serv-pic3:hover .block2,
+.serv-pic4:hover .block2,
+.serv-pic1:hover .block3,
+.serv-pic2:hover .block3,
+.serv-pic3:hover .block3,
+.serv-pic4:hover .block3,
+.serv-pic1:hover .block4,
+.serv-pic2:hover .block4,
+.serv-pic3:hover .block4,
+.serv-pic4:hover .block4 {
+  display: block;
+  cursor: pointer;
+}
+
+.serv-pic1:hover + a,
+.serv-pic2:hover + a,
+.serv-pic3:hover + a,
+.serv-pic4:hover + a {
+  color: #f4b60d;
+  cursor: pointer;
 }
 
 .serv-pic2 {
   background-position: -490px 0;
 }
 
+.serv-pic2:hover .block2 {
+  display: block;
+  cursor: pointer;
+}
+
 .serv-pic3 {
   background-position: -755px 0;
 }
 
+.serv-pic3:hover .block3 {
+  display: block;
+  cursor: pointer;
+}
+
 .serv-pic4 {
   background-position: -1017px 0;
+}
+
+.serv-pic4:hover .block4 {
+  display: block;
+  cursor: pointer;
 }
 
 .sliding-block {
