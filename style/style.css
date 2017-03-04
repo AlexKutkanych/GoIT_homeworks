@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -147,35 +146,32 @@ li {
   overflow: hidden;
   width: 1160px;
   height: 470px; }
-
-.jcarousel ul {
-  width: 20000em;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.jcarousel li {
-  float: left; }
+  .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .jcarousel li {
+    float: left; }
 
 /** Carousel Pagination **/
 .jcarousel-pagination {
   position: absolute;
   bottom: 10px;
   left: 50%; }
-
-.jcarousel-pagination a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-  line-height: 14px;
-  min-width: 14px;
-  background: white;
-  color: #4E443C;
-  padding: 3px;
-  text-align: center;
-  margin-right: 2px;
-  opacity: .75; }
+  .jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    background: white;
+    color: #4E443C;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75; }
 
 .jcarousel-pagination a.active {
   background: #4E443C;
@@ -334,19 +330,6 @@ p:hover .arrow {
   display: block;
   cursor: pointer; }
 
-.sliding-block {
-  height: 260px;
-  width: 260px;
-  position: absolute;
-  display: none;
-  background-color: red; }
-
-.test {
-  visibility: hidden; }
-
-.serv-pic1:hover .test, .serv-pic2:hover .test, .serv-pic3:hover .test, .serv-pic4:hover .test {
-  visibility: visible; }
-
 .wrapper-news {
   height: 540px;
   background-color: #f7f7f7; }
@@ -422,100 +405,84 @@ section {
 section h3 {
   text-transform: capitalize; }
 
-/**
-* Компоненты аккордеона.
-*/
-.accordion {
-  margin: 0;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  list-style: none; }
+.ac-container {
+  width: 562px;
+  margin: -2px 18px 30px 21px;
+  text-align: left; }
+  .ac-container label {
+    display: block;
+    position: relative;
+    height: 39px;
+    margin-bottom: -5px;
+    padding: 0 20px;
+    padding-left: 25px;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    z-index: 20;
+    background-color: white;
+    line-height: 39px;
+    text-transform: uppercase;
+    text-indent: 46px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2a2d32; }
 
-.accordion_item {
-  background-color: white; }
+.ac-container label:hover {
+  background: #fff; }
 
-.accordion_item:last-of-type {
-  border-bottom: none; }
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+  background: #f4b60d;
+  color: #fefaef;
+  margin-bottom: 0;
+  border: none; }
 
-/**
-* Элемент label который запускает открыть/закрыть.
-*/
-.accordion_trigger {
+.ac-container label::before {
+  content: '';
   display: block;
-  background-color: white;
-  color: #2a2d32;
-  font-weight: normal;
-  cursor: pointer;
-  padding: 1.2em;
-  text-transform: uppercase;
-  border: 1px solid #e8e8e8; }
-
-.accordion_trigger::before {
-  content: '\002B';
-  font-size: 13px;
-  margin-right: 10px;
-  border-right: 1px solid red; }
-
-/* меняем цвет фона у активного переключателя */
-.accordion_toggle:checked ~ .accordion_trigger {
-  background-color: #f4b60d;
-  color: white; }
-
-/**
- * эти элементы radio/checkbox всегда должны быть скрыты.
- */
-.accordion_toggle {
   position: absolute;
+  width: 39px;
+  height: 39px;
+  right: 519px;
+  top: 0px;
+  background: transparent url(../img/open.jpg) 0 0 no-repeat;
+  border-right: 2px solid #e8e8e8; }
+
+.ac-container input:checked + label::before {
+  border: none;
+  border-right: 1px solid #f6c53d;
+  background: url(../img/close.jpg) 0 0 no-repeat; }
+
+.ac-container input {
   display: none; }
 
-/**
-* скрытое содержание аккордеона.
-*/
-.accordion_target {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
+.ac-container article {
   overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  color: #8a8a8a; }
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear; }
 
-/**
-* когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
-*/
-.accordion_toggle:checked ~ .accordion_target {
-  position: static;
-  overflow: visible;
-  clip: auto;
-  margin: auto;
-  padding: 1.2rem;
-  width: auto;
-  height: auto;
-  /* задержка появления  функция анимации */
-  -webkit-animation: fadeIn ease-in 0.5s;
-  -moz-animation: fadeIn ease-in 0.5s;
-  animation: fadeIn ease-in 0.5s; }
+.ac-container article p {
+  color: #8a8a8a;
+  line-height: 23px;
+  font-size: 14px;
+  padding: 20px; }
 
-/* анимация при появлении блоков с содержанием */
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.ac-container input:checked ~ article {
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear; }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.ac-container input:checked ~ article.ac-medium {
+  height: 180px; }
 
 .wrapper-logos {
   height: 240px; }

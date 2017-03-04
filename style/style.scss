@@ -103,12 +103,8 @@ $footer-a-color: #797a7c;
   }
   .skype:hover {
     background-position: 17px -20px;
-
   }
 }
-
-
-
 
 a {
   color: white;
@@ -118,7 +114,6 @@ a {
 
 li {
   list-style: none;
-
 }
 
 .menu-top {
@@ -141,9 +136,6 @@ li {
     font-size: 13px;
   }
 }
-// .active {
-//   background-color: $hover-color-menu;
-// }
 
 .search-box {
   float: right;
@@ -165,7 +157,6 @@ li {
       color: #616568;
       border: none;
       text-indent: 10px;
-
     }
     button {
       float: right;
@@ -174,7 +165,6 @@ li {
       background-color: #35383d;
       border: none;
       cursor: pointer;
-
     }
   }
 }
@@ -182,6 +172,7 @@ li {
 .menu-top a:hover {
   color: $hover-color;
 }
+
 
 //slider
 .jcarousel-wrapper {
@@ -198,18 +189,16 @@ li {
     overflow: hidden;
     width: 1160px;
     height: 470px;
-}
-
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.jcarousel li {
-    float: left;
+    ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      float: left;
+    }
 }
 
 /** Carousel Pagination **/
@@ -218,21 +207,19 @@ li {
     position: absolute;
     bottom: 10px;
     left: 50%;
-}
-
-.jcarousel-pagination a {
-    text-decoration: none;
-    display: inline-block;
-    font-size: 11px;
-    line-height: 14px;
-    min-width: 14px;
-    background: white;
-    color: #4E443C;
-    padding: 3px;
-    text-align: center;
-    margin-right: 2px;
-
-    opacity: .75;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      font-size: 11px;
+      line-height: 14px;
+      min-width: 14px;
+      background: white;
+      color: #4E443C;
+      padding: 3px;
+      text-align: center;
+      margin-right: 2px;
+      opacity: .75;
+    }
 }
 
 .jcarousel-pagination a.active {
@@ -261,9 +248,6 @@ li {
       font-size: 14px;
     }
   }
-  // :last-child{
-  //   float: right;
-  // }
   a {
     color: black;
     display: block;
@@ -316,7 +300,6 @@ li {
   width: 34px;
 }
 
-
 .read-more {
   font-size: 13px;
   font-weight: bold;
@@ -325,6 +308,7 @@ li {
     float: left;
   }
 }
+
 .read-more:hover {
   color: $hover-color-menu;
 }
@@ -340,8 +324,8 @@ p:hover .arrow {
   background-position: 0 9px;
 }
 
-
 //services
+
 .wrapper-services {
   @extend .wrapper-top;
   width: 100%;
@@ -370,21 +354,17 @@ p:hover .arrow {
   margin-right: 40px;
 }
 
-
 .services {
   position: relative;
   width: 260px;
   height: 312px;
   float: left;
-
   a {
     margin: 32px 0 0 -14px;
     text-align: center;
     font-size: 18px;
   }
 }
-
-
 
 .service1 a:hover, .service2 a:hover, .service3 a:hover, .service4 a:hover,{
   color: $hover-color;
@@ -406,6 +386,7 @@ p:hover .arrow {
   opacity: .9;
   display: none;
 }
+
 .block1 span {
   color: white;
   font-size: 60px;
@@ -423,7 +404,6 @@ p:hover .arrow {
   color: $hover-color;
   cursor: pointer;
 }
-
 
 .serv-pic2 {
   @extend .serv-pic1;
@@ -467,22 +447,6 @@ p:hover .arrow {
   cursor: pointer;
 }
 
-.sliding-block {
-  height: 260px;
-  width: 260px;
-  position: absolute;
-  display: none;
-  background-color: red;
-}
-
-.test {
-  visibility: hidden;;
-}
-
-.serv-pic1:hover .test {
-  visibility: visible;
-}
-
 //news
 
 .wrapper-news {
@@ -495,7 +459,6 @@ p:hover .arrow {
   @extend .wrapper-top;
   height: 540px;
 }
-
 
 .news {
   float: left;
@@ -525,7 +488,6 @@ p:hover .arrow {
     p {
       color: #8a8a8a;
     }
-
     h3:hover, .author {
       color: $hover-color-menu;
       cursor: pointer;
@@ -557,7 +519,7 @@ section {
 
 .date-sqr {
   @extend .month-sqr;
-  background-color: #f4b60d;
+  background-color: $hover-color;
   top: 52px;
 }
 
@@ -591,103 +553,98 @@ section {
 
 .banner-place {
   @extend .news;
-
 }
 
 //accordeon
-/**
-* Компоненты аккордеона.
-*/
-.accordion {
-  margin: 0;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  list-style: none;
+.ac-container{
+	width: 562px;
+	margin: -2px 18px 30px 21px;
+	text-align: left;
+  label{
+    display: block;
+    position: relative;
+    height: 39px;
+    margin-bottom: -5px;
+    padding: 0 20px;
+    padding-left: 25px;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    z-index: 20;
+    background-color: white;
+    line-height: 39px;
+    text-transform: uppercase;
+    text-indent: 46px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2a2d32;
+  }
 }
-.accordion_item {
-  background-color: white;
+
+.ac-container label:hover{
+	background: #fff;
+
 }
-.accordion_item:last-of-type {
-  border-bottom: none;
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: $hover-color;
+	color: #fefaef;
+  margin-bottom: 0;
+  border: none;
 }
-/**
-* Элемент label который запускает открыть/закрыть.
-*/
-.accordion_trigger {
+
+.ac-container label::before {
+	content: '';
   display: block;
-  background-color: white;
-  color: #2a2d32;
-  font-weight: normal;
-  cursor: pointer;
-  padding: 1.2em;
-  text-transform: uppercase;
-  border: 1px solid #e8e8e8;
+	position: absolute;
+	width: 39px;
+	height: 39px;
+	right: 519px;
+	top: 0px;
+	background: transparent url(../img/open.jpg) 0 0 no-repeat;
+  border-right: 2px solid #e8e8e8;
 }
 
-.accordion_trigger::before {
-  content: '\002B';
-  font-size: 13px;
-  margin-right: 10px;
-  border-right: 1px solid red;
+.ac-container input:checked + label::before{
+  border: none;
+  border-right: 1px solid #f6c53d;
+	background: url(../img/close.jpg) 0 0 no-repeat;
 }
 
-/* меняем цвет фона у активного переключателя */
-
-.accordion_toggle:checked ~ .accordion_trigger {
-  background-color: #f4b60d;
-  color: white;
+.ac-container{
+  input{
+	  display: none;
+  }
+  article{
+  	overflow: hidden;
+  	height: 0px;
+  	position: relative;
+  	z-index: 10;
+  	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  }
+  article p{
+  	color: #8a8a8a;
+  	line-height: 23px;
+  	font-size: 14px;
+  	padding: 20px;
+  }
+}
+.ac-container input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 }
 
-/**
- * эти элементы radio/checkbox всегда должны быть скрыты.
- */
-.accordion_toggle {
-  position: absolute;
-  display: none;
+.ac-container input:checked ~ article.ac-medium{
+	height: 180px;
 }
-/**
-* скрытое содержание аккордеона.
-*/
-.accordion_target {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  color: #8a8a8a;
-}
-/**
-* когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
-*/
-.accordion_toggle:checked ~ .accordion_target {
-  position: static;
-  overflow: visible;
-  clip: auto;
-  margin: auto;
-  padding: 1.2rem;
-  width: auto;
-  height: auto;
-/* задержка появления  функция анимации */
-  -webkit-animation:fadeIn ease-in 0.5s;
-  -moz-animation:fadeIn ease-in 0.5s;
-  animation:fadeIn ease-in 0.5s;
-}
-/* анимация при появлении блоков с содержанием */
-@-moz-keyframes fadeIn {
-    from { opacity: 0; }
-to { opacity: 1 }
-}
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-to { opacity: 1 }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-to { opacity: 1 }
-}
+
 //bottom logos
 
 .wrapper-logos {
@@ -718,14 +675,12 @@ to { opacity: 1 }
   width: 184px;
   background-position: -295px 0;
   margin: 90px 45px 0 0;
-
 }
 
 .logo4 {
   @extend .logo1;
   background-position: -480px 0;
   margin: 90px 60px 0 0;
-
 }
 
 .logo5 {
@@ -743,6 +698,7 @@ to { opacity: 1 }
 
 footer {
   @extend .wrapper-services;
+  width: 100%;
   height: 387px;
   clear: both;
   font-family: $main-font;
@@ -794,7 +750,6 @@ footer {
 .menu4 {
   @extend .menu1;
   margin-right: 0px;
-
 }
 
 //contacts
@@ -807,7 +762,6 @@ footer {
 .contacts {
   @extend .footer-menu;
   height: 100%;
-
   span {
     line-height: 60px;
     color: $footer-a-color;
@@ -820,19 +774,15 @@ footer {
     height: 16px;
     float: left;
     margin: 23px 7px 0 3px;
-
   }
   :nth-child(2) {
     margin: 0 36px 0 3px;
   }
-
   .phone {
     @extend .location;
     background-position: 12px 0;
     width: 12px;
-
   }
-
   :nth-child(4) {
     margin-right: 41px;
   }
@@ -842,9 +792,7 @@ footer {
     width: 18px;
     margin-right: 10px;
   }
-
   :last-child {
     float: right;
   }
-
 }
