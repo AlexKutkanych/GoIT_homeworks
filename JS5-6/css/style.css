@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 900px;
+  height: 500px;
+  margin: 100px auto;
+  background-color: lightgrey;
+  font-size: 100px;
+  font-family: Arial, sans-serif;
+  opacity: .5;
+  border-radius: 30px;
+  position: relative;
+}
+
+#timer {
+  display: block;
+  margin: 10px auto;
+  padding: 100px 0 0 150px;
+  clear: both;
+}
+
+input {
+  width: 250px;
+  height: 100px;
+  display: block;
+  background-color: none;
+  border: 2px solid black;
+  border-radius: 64px;
+  font-size: 70px;
+  font-family: Arial, sans-serif;
+}
+
+#start {
+  float: left;
+  margin: 50px 0 0 100px;
+}
+#clear {
+  float: right;
+  margin: 50px 100px 0 0;
+}
+
+.quote {
+  display: block;
+  width: 600px;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 700px;
+  left: 100px;
+  font-family: Arial, sans-serif;
+  color: #545556;
+}
+
+.quote span {
+  font-size: 20px;
+}
+
+.fill {
+  background-color: #419adb;
+}
