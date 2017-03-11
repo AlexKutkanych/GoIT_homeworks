@@ -1,5 +1,4 @@
-// // "use strict";
-//
+"use strict";
 var [myTest, answers] = [
   [
   {
@@ -53,7 +52,7 @@ localStorage.setItem('myTest', JSON.stringify(myTest));
 myTest = JSON.parse(localStorage.getItem('myTest'));
 
 //описую шаблон, який ставить HTML фрагмент на сторінку з використанням зворотньої кавички
-const page = obj => `
+var PAGE = obj => `
 <p class="title">Test</p>
 <form id="form">
 ${obj.map(obj => `
@@ -70,7 +69,7 @@ ${obj.map(obj => `
   `;
 // ставимо шаблон на строніку
 var parent = document.getElementsByClassName('wrapper')[0];
- parent.innerHTML = page(myTest);
+ parent.innerHTML = PAGE(myTest);
 
 // ставимо колбек на клік мишкою по кнопці перевірити результат
 var btn = document.getElementById('check_button');
