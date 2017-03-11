@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 900px;
+  margin: 0 auto;
+  /*background-color: rgba(66, 134, 244, .3);*/
+  /*background-color: rgba(0, 0, 0, .3);*/
+  background-color: rgba(157, 160, 165, .5);
+}
+
+.title {
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  margin-bottom: 45px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wrapper1 {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.question {
+  font-family: Arial, sans-serif;
+  margin: 20px 0 10px 20px;
+  font-weight: bold;
+}
+
+.answer {
+  max-height: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 666px;
+  cursor: pointer;
+}
+
+#input-class  {
+  margin: 0 10px 0 30px;
+  cursor: pointer;
+
+}
+
+#check_button {
+  width: 250px;
+  height: 45px;
+  display: block;
+  margin: 50px auto;
+  background-color: #4286f4;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+.test-modal {
+  display: none;
+  background-color: rgba(255, 100, 0, 0.5);
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
