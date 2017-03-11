@@ -7,6 +7,7 @@ body {
   background-image: url(../img/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .wrapper {
@@ -18,13 +19,15 @@ body {
   background-color: rgba(157, 160, 165, .5);
 }
 
-h2 {
+.title {
   display: block;
   margin: auto;
   padding-top: 30px;
   margin-bottom: 45px;
   font-family: Arial, sans-serif;
   text-align: center;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .wrapper1 {
@@ -36,6 +39,7 @@ h2 {
 .question {
   font-family: Arial, sans-serif;
   margin: 20px 0 10px 20px;
+  font-weight: bold;
 }
 
 .answer {
@@ -43,13 +47,16 @@ h2 {
   font-family: Arial, sans-serif;
   font-size: 16px;
   margin-right: 666px;
+  cursor: pointer;
 }
 
-.input-class  {
+#input-class  {
   margin: 0 10px 0 30px;
+  cursor: pointer;
+
 }
 
-.button {
+#check_button {
   width: 250px;
   height: 45px;
   display: block;
@@ -66,33 +73,13 @@ label {
   display: block;
 }
 
-.results {
-  position: absolute;
+.test-modal {
+  display: none;
+  background-color: rgba(255, 100, 0, 0.5);
   width: 300px;
-  height: 100px;
+  height: 300px;
+  font-size: 20px;
+  position: fixed;
   top: 50%;
   left: 50%;
-  margin: -150px 0 0 -150px;
-  text-align: center;
-  background-color: lightgrey;
-}
-
-.fancybox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.correctVar {
-  height: 20px;
-}
-
-.brand {
-  font-weight: bold;
-  color: blue;
-  font-size: 22px;
-
 }

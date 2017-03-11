@@ -1,109 +1,117 @@
-// "use strict";
+// // "use strict";
+//
+var [myTest, answers] = [
+  [
+  {
+    question: '1. Which country is the largest producer of olive oil?',
+    answer1: 'Spain',
+    answer2: 'Greece',
+    answer3: 'Italy',
+    answer4: 'Turkey',
+    name: 'question1'
+  },
+  {
+    question: '2. Where was built the first subway?',
+    answer1: 'New York',
+    answer2: 'London',
+    answer3: 'Paris',
+    answer4: 'Moscow',
+    name: 'question2'
+  },
+  {
+    question: '3. What was the currency of Germany before the introduction of the EURO?',
+    answer1: 'Drahma',
+    answer2: 'Mark',
+    answer3: 'Pound',
+    answer4: 'Rouble',
+    name: 'question3'
+  },
+  {
+    question: '4. From which country does pitta bread originate?',
+    answer1: 'Greece',
+    answer2: 'Italy',
+    answer3: 'Mexico',
+    answer4: 'France',
+    name: 'question4'
+  },
+  {
+    question: '5. What is bottled a lot in the French town Vichy?',
+    answer1: 'Jin',
+    answer2: 'Water',
+    answer3: 'Perfumes',
+    answer4: 'Wine',
+    name: 'question5'
+  }
+],
+[true, false, false, false, false, true, false, false, false, true, false, false, true, false, false, false, true, false, false, false]
+];
 
-$(function(){
-  var quiz = $('#quiz').html();
-  // console.log(quiz);
-  var questions = [
-    {
-      question: 'Which country is the largest producer of olive oil?',
-      answer1: 'Spain',
-      answer2: 'Greece',
-      answer3: 'Italy',
-      answer4: 'Turkey',
-      name: 'q1',
-      id1: 'Spain',
-      id2: 'Greece',
-      id3: 'Italy',
-      id4: 'Turkey'
-    },
-    {
-      question: 'Where was built the first subway?',
-      answer1: 'New York',
-      answer2: 'London',
-      answer3: 'Paris',
-      answer4: 'Moscow',
-      name: 'q2'
-    },
-    {
-      question: 'What was the currency of Germany before the introduction of the EURO?',
-      answer1: 'Drahma',
-      answer2: 'Mark',
-      answer3: 'Pound',
-      answer4: 'Rouble',
-      name: 'q3'
-    },
-    {
-      question: 'From which country does pitta bread originate?',
-      answer1: 'Greece',
-      answer2: 'Italy',
-      answer3: 'Mexico',
-      answer4: 'France',
-      name: 'q4'
-    },
-    {
-      question: 'What is bottled a lot in the French town Vichy?',
-      answer1: 'Jin',
-      answer2: 'Water',
-      answer3: 'Perfumes',
-      answer4: 'Wine',
-      name: 'q5'
-    }
-  ];
-  //   {
-  //     question: 'Which country is the largest producer of olive oil?',
-  //     answer: ['Spain', 'Greece', 'Italy', 'Turkey'],
-  //     name: 'q1',
-  //     correctAnswer: 0
-  //   },
-  //   {
-  //     question: 'Where was built the first subway?',
-  //     answer: ['New York', 'London', 'Paris', 'Moscow'],
-  //     name: 'q2',
-  //     correctAnswer: 0
-  //   },
-  //   {
-  //     question: 'What was the currency of Germany before the introduction of the EURO?',
-  //     answer: ['Drahma', 'Mark', 'Pound', 'Rouble'],
-  //     name: 'q3',
-  //     correctAnswer: 1
-  //   },
-  //   {
-  //     question: 'From which country does pitta bread originate?',
-  //     answer: ['Greece', 'Italy', 'Mexico', 'France'],
-  //     name: 'q4',
-  //     correctAnswer: 0
-  //   },
-  //   {
-  //     question: 'What is bottled a lot in the French town Vichy?',
-  //     answer: ['Jin', 'Water', 'Perfumes', 'Wine'],
-  //     name: 'q4',
-  //     correctAnswer: 1
-  //   }
-  // ];
-  // var checked =
-  var $content = tmpl(quiz, {data: questions});
-  $('body').append($content);
 
-  //
-  //   var $button = $('button');
-  //   $button.on('click', function(){
-  //     function submit(){
-  //       var correctAnswer = $('#Spain');
-  //       if(correctAnswer.checked === true) {
+//записую данні в localStorage, перетворюючи обєкт в JSON
+localStorage.setItem('myTest', JSON.stringify(myTest));
+// Беру дані з localStorage і розпарсюю їх
+myTest = JSON.parse(localStorage.getItem('myTest'));
 
-  var $input = $('input');
-  $input.focusin(function(){
-    $(this).attr('checked', 'checked');
-  });
-  $input.focusout(function(){
-    $(this).removeAttr('checked', 'checked');
-  });
+//описую шаблон, який ставить HTML фрагмент на сторінку з використанням зворотньої кавички
+const page = obj => `
+<p class="title">Test</p>
+<form id="form">
+${obj.map(obj => `
+  <div class='form__block'>
+  <p class="question">${obj.question}</p>
+  <label class="answer"><input id="input-class" type='radio' name="${obj.name}"><i>${obj.answer1}</i></label>
+  <label class="answer"><input id="input-class" type='radio' name="${obj.name}"><i>${obj.answer2}</i></label>
+  <label class="answer"><input id="input-class" type='radio' name="${obj.name}"><i>${obj.answer3}</i></label>
+  <label class="answer"><input id="input-class" type='radio' name="${obj.name}"><i>${obj.answer4}</i></label>
+  </div>
+  `).join('')}
+  <button id="check_button" type='submit'>Check Results</button>
+  </form>
+  `;
+// ставимо шаблон на строніку
+var parent = document.getElementsByClassName('wrapper')[0];
+ parent.innerHTML = page(myTest);
 
-  
-  //         alert('correct');
-  //       }
-  //     }
-      // alert('w');
-    // });
-    // console.log($button);
+// ставимо колбек на клік мишкою по кнопці перевірити результат
+var btn = document.getElementById('check_button');
+btn.addEventListener("click", function(event) {
+  showResults();// показуємо результат
+  event.preventDefault(); // так як у нас ставиться форма, зробимо щоб сторінка не перегружалася
 });
+
+// реалізація модлаьного вікна
+var btnTestOk = document.getElementsByClassName('test-modal__click')[0];
+console.log(btnTestOk);
+var resultsWindow = document.getElementsByClassName('test-modal')[0];
+    btnTestOk.addEventListener("click", function() {
+    resultsWindow.setAttribute('style', 'display: none;');
+});
+var testResultMassage = document.getElementsByClassName("test-message")[0];
+
+// функція, яка показує результат
+function showResults() {
+  var elems = document.getElementsByTagName("input");
+  var res = Array.from(elems, x => x.checked);
+  var tmp = answers.length;
+
+  var result = compareArr(answers, res, tmp);
+
+     if(result) {
+        testResultMassage.innerHTML = 'Well done, you scored 5/5';
+    } else {
+        testResultMassage.innerHTML = 'You did not pass';
+  }
+
+resultsWindow.setAttribute('style', 'display: block;');
+
+}
+
+//функція, яка порівнює два масиви
+var compareArr = (arr1, arr2, arrayLength) => {
+  for (var i = 0; i < arrayLength; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
