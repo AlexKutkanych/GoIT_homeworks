@@ -1,0 +1,216 @@
+$wrapper-width: 960px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+//top
+.wrapper-picture {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background: url(../img/main-pic.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.wrapper-top {
+  width: $wrapper-width;
+  margin: 0 auto;
+  .name {
+    float: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .button-wrapper {
+    float: right;
+    margin-top: 50px;
+    .button-login {
+      background-color: none;
+      width: 100px;
+      height: 50px;
+      border-radius: 14px;
+      cursor: pointer;
+      pointer-events: painted;
+    }
+    .button-signup {
+      @extend .button-login;
+    }
+  }
+  .wrapper-slogan {
+    width: 90%;
+    clear: both;
+    margin: 0 auto;
+    .slogan {
+      font-size: 60px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .button-find {
+      @extend .button-login;
+    }
+  }
+}
+
+//steps
+
+.wrapper-steps {
+  @extend .wrapper-top;
+  height: 600px;
+  .chapter-name {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+//partners
+
+.wrapper-partner {
+  @extend .wrapper-top;
+  height: 600px;
+  .partners {
+    section {
+      width: 125px;
+      float: left;
+    }
+    .partner {
+      float: left;
+      width: 125px;
+      height: 125px;
+      margin-right: 20px;
+      background: url(../img/partners.png) 0 0 no-repeat;
+    }
+    .partner2 {
+      background-position: -143px 0;
+    }
+    .partner3 {
+      background-position: -285px 0;
+    }
+    .partner4 {
+      background-position: -432px 0;
+    }
+  }
+}
+
+//ideas
+.wrapper-ideas {
+  @extend .wrapper-top;
+  height: 1000px;
+  position: relative;
+  p {
+    color: white;
+    font-size: 30px;
+  }
+  .idea {
+    display: block;
+    float: left;
+    width: 300px;
+    height: 310px;
+    background: url(../img/ideas.jpg) 0 0 no-repeat;
+  }
+  .idea1_desc {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+  }
+  .idea2 {
+    float: left;
+    background-position: -322px 0;
+  }
+  .idea2_desc {
+    position: absolute;
+    top: 180px;
+    left: 330px;
+  }
+  .idea3 {
+    float: right;
+    background-position: -640px 0;
+  }
+  .idea3_desc {
+    position: absolute;
+    top: 180px;
+    left: 682px;
+  }
+  .idea4 {
+    float: left;
+    background-position: 0 -330px;
+  }
+  .idea4_desc {
+    position: absolute;
+    top: 480px;
+    left: 100px;
+  }
+  .idea5 {
+    float: left;
+    width: 600px;
+    background-position: -330px -330px;
+  }
+  .idea5_desc {
+    position: absolute;
+    top: 480px;
+    left: 330px;
+  }
+  .idea6 {
+    float: left;
+    width: 600px;
+    background-position: 0 -660px;
+  }
+  .idea6_desc {
+    position: absolute;
+    top: 780px;
+    left: 250px;
+  }
+  .idea7 {
+    float: left;
+    background-position: -640px -660px;
+  }
+  .idea7_desc {
+    position: absolute;
+    top: 780px;
+    left: 680px;
+  }
+}
+
+//find
+
+.wrapper-find {
+  @extend .wrapper-top;
+
+}
+//footer
+footer {
+  border-top: 2px solid red;
+  .wrapper-footer{
+  @extend .wrapper-top;
+  ul {
+    float: left;
+  }
+  span {
+    float: left;
+  }
+  .designed {
+    float: right;
+    text-transform: uppercase;
+    a {
+      display: block;
+      width: 110px;
+      height: 24px;
+      background: url(../img/designed.png) 0 0 no-repeat;
+    }
+  }
+  }
+}

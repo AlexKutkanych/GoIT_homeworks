@@ -1,0 +1,9 @@
+/*MEDIA 768PX*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .wrapper-slogan {
+    width: 5rem; }
+  body {
+    background-color: red; }
+  .wrapper-slogan {
+    display: block;
+    max-width: 20rem; } }

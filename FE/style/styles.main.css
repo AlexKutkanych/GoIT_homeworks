@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper-picture {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  background: url("../img/main-pic.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+
+.wrapper-top,
+.wrapper-steps,
+.wrapper-partner,
+.wrapper-ideas,
+.wrapper-find,
+footer .wrapper-footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper-top .name,
+.wrapper-steps .name,
+.wrapper-partner .name,
+.wrapper-ideas .name,
+.wrapper-find .name,
+footer .wrapper-footer .name {
+  float: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.wrapper-top .button-wrapper,
+.wrapper-steps .button-wrapper,
+.wrapper-partner .button-wrapper,
+.wrapper-ideas .button-wrapper,
+.wrapper-find .button-wrapper,
+footer .wrapper-footer .button-wrapper {
+  float: right;
+  margin-top: 50px;
+}
+
+.wrapper-top .button-wrapper .button-login,
+.wrapper-steps .button-wrapper .button-login,
+.wrapper-partner .button-wrapper .button-login,
+.wrapper-ideas .button-wrapper .button-login,
+.wrapper-find .button-wrapper .button-login,
+footer .wrapper-footer .button-wrapper .button-login,
+.wrapper-top .button-wrapper .button-signup,
+.wrapper-steps .button-wrapper .button-signup,
+.wrapper-partner .button-wrapper .button-signup,
+.wrapper-ideas .button-wrapper .button-signup,
+.wrapper-find .button-wrapper .button-signup,
+footer .wrapper-footer .button-wrapper .button-signup,
+.wrapper-top .button-wrapper .wrapper-slogan .button-find,
+.wrapper-top .wrapper-slogan .button-wrapper .button-find,
+.wrapper-steps .button-wrapper .wrapper-slogan .button-find,
+.wrapper-steps .wrapper-slogan .button-wrapper .button-find,
+.wrapper-partner .button-wrapper .wrapper-slogan .button-find,
+.wrapper-partner .wrapper-slogan .button-wrapper .button-find,
+.wrapper-ideas .button-wrapper .wrapper-slogan .button-find,
+.wrapper-ideas .wrapper-slogan .button-wrapper .button-find,
+.wrapper-find .button-wrapper .wrapper-slogan .button-find,
+.wrapper-find .wrapper-slogan .button-wrapper .button-find,
+footer .wrapper-footer .button-wrapper .wrapper-slogan .button-find,
+footer .wrapper-footer .wrapper-slogan .button-wrapper .button-find {
+  background-color: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 14px;
+  cursor: pointer;
+  pointer-events: painted;
+}
+
+.wrapper-top .wrapper-slogan,
+.wrapper-steps .wrapper-slogan,
+.wrapper-partner .wrapper-slogan,
+.wrapper-ideas .wrapper-slogan,
+.wrapper-find .wrapper-slogan,
+footer .wrapper-footer .wrapper-slogan {
+  width: 90%;
+  clear: both;
+  margin: 0 auto;
+}
+
+.wrapper-top .wrapper-slogan .slogan,
+.wrapper-steps .wrapper-slogan .slogan,
+.wrapper-partner .wrapper-slogan .slogan,
+.wrapper-ideas .wrapper-slogan .slogan,
+.wrapper-find .wrapper-slogan .slogan,
+footer .wrapper-footer .wrapper-slogan .slogan {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.wrapper-steps {
+  height: 600px;
+}
+
+.wrapper-steps .chapter-name {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper-partner {
+  height: 600px;
+}
+
+.wrapper-partner .partners section {
+  width: 125px;
+  float: left;
+}
+
+.wrapper-partner .partners .partner {
+  float: left;
+  width: 125px;
+  height: 125px;
+  margin-right: 20px;
+  background: url("../img/partners.png") 0 0 no-repeat;
+}
+
+.wrapper-partner .partners .partner2 {
+  background-position: -143px 0;
+}
+
+.wrapper-partner .partners .partner3 {
+  background-position: -285px 0;
+}
+
+.wrapper-partner .partners .partner4 {
+  background-position: -432px 0;
+}
+
+.wrapper-ideas {
+  height: 1000px;
+  position: relative;
+}
+
+.wrapper-ideas p {
+  color: white;
+  font-size: 30px;
+}
+
+.wrapper-ideas .idea {
+  display: block;
+  float: left;
+  width: 300px;
+  height: 310px;
+  background: url("../img/ideas.jpg") 0 0 no-repeat;
+}
+
+.wrapper-ideas .idea1_desc {
+  position: absolute;
+  top: 180px;
+  left: 50px;
+}
+
+.wrapper-ideas .idea2 {
+  float: left;
+  background-position: -322px 0;
+}
+
+.wrapper-ideas .idea2_desc {
+  position: absolute;
+  top: 180px;
+  left: 330px;
+}
+
+.wrapper-ideas .idea3 {
+  float: right;
+  background-position: -640px 0;
+}
+
+.wrapper-ideas .idea3_desc {
+  position: absolute;
+  top: 180px;
+  left: 682px;
+}
+
+.wrapper-ideas .idea4 {
+  float: left;
+  background-position: 0 -330px;
+}
+
+.wrapper-ideas .idea4_desc {
+  position: absolute;
+  top: 480px;
+  left: 100px;
+}
+
+.wrapper-ideas .idea5 {
+  float: left;
+  width: 600px;
+  background-position: -330px -330px;
+}
+
+.wrapper-ideas .idea5_desc {
+  position: absolute;
+  top: 480px;
+  left: 330px;
+}
+
+.wrapper-ideas .idea6 {
+  float: left;
+  width: 600px;
+  background-position: 0 -660px;
+}
+
+.wrapper-ideas .idea6_desc {
+  position: absolute;
+  top: 780px;
+  left: 250px;
+}
+
+.wrapper-ideas .idea7 {
+  float: left;
+  background-position: -640px -660px;
+}
+
+.wrapper-ideas .idea7_desc {
+  position: absolute;
+  top: 780px;
+  left: 680px;
+}
+
+footer {
+  border-top: 2px solid red;
+}
+
+footer .wrapper-footer ul {
+  float: left;
+}
+
+footer .wrapper-footer span {
+  float: left;
+}
+
+footer .wrapper-footer .designed {
+  float: right;
+  text-transform: uppercase;
+}
+
+footer .wrapper-footer .designed a {
+  display: block;
+  width: 110px;
+  height: 24px;
+  background: url("../img/designed.png") 0 0 no-repeat;
+}
+/*MEDIA 768PX*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .wrapper-slogan {
+    width: 5rem;
+  }
+
+  body {
+    background-color: red;
+  }
+
+  .wrapper-slogan {
+    display: block;
+    max-width: 20rem;
+  }
+}
