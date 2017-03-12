@@ -232,6 +232,11 @@ a {
     border-radius: 20px;
     background-color: white;
   }
+  .button-partners:hover{
+    cursor: pointer;
+    background-color: $main-color;
+    color: white;
+  }
 }
 
 //ideas
@@ -256,67 +261,76 @@ a {
     width: 300px;
     height: 310px;
     background: url(../img/ideas.jpg) 0 0 no-repeat;
+    border-radius: 4px;
+    margin: 0 17px 20px 3px;
   }
   .idea1_desc {
     position: absolute;
-    top: 180px;
-    left: 50px;
+    top: 200px;
+    left: 53px;
+    color: white;
+    font-size: 22px;
+    font-family: $main-font;
   }
   .idea2 {
     float: left;
-    background-position: -322px 0;
+    background-position: -320px 0;
+    margin: 0 0 20px 3px;
   }
   .idea2_desc {
-    position: absolute;
-    top: 180px;
-    left: 330px;
+    @extend .idea1_desc;
+    left: 367px;
   }
   .idea3 {
     float: right;
     background-position: -640px 0;
+    margin-right: -2px;
   }
   .idea3_desc {
-    position: absolute;
-    top: 180px;
-    left: 682px;
+    @extend .idea1_desc;
+    width: 182px;
+    top: 187px;
+    left: 702px;
   }
   .idea4 {
     float: left;
     background-position: 0 -330px;
   }
   .idea4_desc {
-    position: absolute;
-    top: 480px;
-    left: 100px;
+    @extend .idea1_desc;
+    top: 531px;
+    left: 116px;
   }
   .idea5 {
     float: left;
-    width: 600px;
-    background-position: -330px -330px;
+    width: 617px;
+    background-position: -321px -330px;
+    margin-left: 3px;
+    margin-right: 0px;
   }
   .idea5_desc {
-    position: absolute;
-    top: 480px;
-    left: 330px;
+    @extend .idea4_desc;
+    left: 509px;
   }
   .idea6 {
     float: left;
-    width: 600px;
+    width: 620px;
     background-position: 0 -660px;
+    margin-right: 14px;
   }
   .idea6_desc {
-    position: absolute;
-    top: 780px;
-    left: 250px;
+    @extend .idea1_desc;
+    top: 861px;
+    left: 253px;
   }
   .idea7 {
     float: left;
     background-position: -640px -660px;
+    margin-right: 0;
   }
   .idea7_desc {
-    position: absolute;
-    top: 780px;
-    left: 680px;
+    @extend .idea6_desc;
+    left: 740px;
   }
 }
 
