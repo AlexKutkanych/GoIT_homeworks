@@ -420,9 +420,18 @@ footer .wrapper-footer .name {
   text-transform: uppercase;
   font-size: 20px;
   margin: 40px 0 0 1px;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   color: white;
   letter-spacing: 1.2px;
+}
+
+.wrapper-top .name a:hover,
+.wrapper-steps .name a:hover,
+.wrapper-partner .name a:hover,
+.wrapper-ideas .name a:hover,
+.wrapper-find .name a:hover,
+footer .wrapper-footer .name a:hover {
+  color: #ff4e50;
 }
 
 .wrapper-top .button-wrapper,
@@ -452,7 +461,7 @@ footer .wrapper-footer .button-wrapper .button-signup {
   width: 74px;
   height: 36px;
   cursor: pointer;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   border-radius: 18px;
   color: white;
 }
@@ -503,7 +512,7 @@ footer .wrapper-footer .wrapper-slogan {
 footer .wrapper-footer .wrapper-slogan .slogan {
   width: 490px;
   height: 101px;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   font-size: 52px;
   text-transform: uppercase;
   text-align: center;
@@ -528,7 +537,7 @@ footer .wrapper-footer .wrapper-slogan .slogan1 {
   width: 405px;
   height: 24px;
   font-size: 24px;
-  font-family: 'roboto-thin';
+  font-family: "roboto-thin", sans-serif;
   margin: 0 0 41px 228px;
   word-spacing: 1px;
 }
@@ -543,12 +552,21 @@ footer .wrapper-footer .wrapper-slogan .button-find {
   height: 40px;
   background-color: #ff4e50;
   border-radius: 20px;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   border: none;
   color: white;
   cursor: pointer;
   margin-left: 314px;
   letter-spacing: 0.4px;
+}
+
+.wrapper-top .wrapper-slogan .button-find:hover,
+.wrapper-steps .wrapper-slogan .button-find:hover,
+.wrapper-partner .wrapper-slogan .button-find:hover,
+.wrapper-ideas .wrapper-slogan .button-find:hover,
+.wrapper-find .wrapper-slogan .button-find:hover,
+footer .wrapper-footer .wrapper-slogan .button-find:hover {
+  color: #14c1f4;
 }
 
 .wrapper-steps {
@@ -558,7 +576,7 @@ footer .wrapper-footer .wrapper-slogan .button-find {
 
 .wrapper-steps .chapter-name {
   text-align: center;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
   margin: 94px 0 34px 3px;
@@ -571,7 +589,7 @@ footer .wrapper-footer .wrapper-slogan .button-find {
 
 .wrapper-partner .chapter-name {
   text-align: center;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
   margin: 0 0 32px 3px;
@@ -612,7 +630,7 @@ footer .wrapper-footer .wrapper-slogan .button-find {
   clear: both;
   color: #333;
   font-size: 14px;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   margin: 0 0 11px 41px;
 }
 
@@ -622,7 +640,7 @@ footer .wrapper-footer .wrapper-slogan .button-find {
 .wrapper-partner .partners .section4 p {
   color: #666;
   font-size: 14px;
-  font-family: 'roboto-thin';
+  font-family: "roboto-thin", sans-serif;
   text-align: center;
   margin-left: -15px;
   word-spacing: 1px;
@@ -694,7 +712,7 @@ footer .wrapper-footer .wrapper-slogan .button-find {
   margin: 39px auto;
   clear: both;
   color: #ff4e50;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   font-size: 14px;
   border: 2px solid #ff4e50;
   border-radius: 20px;
@@ -708,13 +726,13 @@ footer .wrapper-footer .wrapper-slogan .button-find {
 }
 
 .wrapper-ideas {
-  height: 1000px;
+  height: 1032px;
   position: relative;
 }
 
 .wrapper-ideas .chapter-name {
   text-align: center;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
   margin: 0 0 34px 3px;
@@ -747,7 +765,7 @@ footer .wrapper-footer .wrapper-slogan .button-find {
   left: 53px;
   color: white;
   font-size: 22px;
-  font-family: "montserrat-bold";
+  font-family: "montserrat-bold", sans-serif;
 }
 
 .wrapper-ideas .idea2 {
@@ -818,21 +836,113 @@ footer .wrapper-footer .wrapper-slogan .button-find {
   left: 740px;
 }
 
+.wrapper-find {
+  text-align: center;
+}
+
+.wrapper-find .chapter-name {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 22px;
+  color: #333;
+  margin: 94px 0 30px 3px;
+}
+
+.wrapper-find p {
+  color: #333;
+  font-family: 'roboto-light', sans-serif;
+  font-size: 18px;
+  margin: 0 -4px 35px 0;
+}
+
+.wrapper-find .form_find {
+  width: 240px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 #eee;
+  font-size: 14px;
+  margin: -1px 9px 100px 8px;
+  text-indent: 16px;
+  font-weight: "roboto-thin", sans-serif;
+  color: #999;
+}
+
+.wrapper-find .button-search {
+  width: 160px;
+  height: 40px;
+  background-color: #ff4e50;
+  border-radius: 20px;
+  font-family: "montserrat-bold", sans-serif;
+  border: none;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+}
+
+.wrapper-find .button-search:hover {
+  color: #14c1f4;
+}
+
 footer {
-  border-top: 2px solid red;
+  height: 200px;
+  border-top: 4px solid #ff4e50;
 }
 
-footer .wrapper-footer ul {
+footer .wrapper-footer .name a {
   float: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: -3px 95px 0 1px;
+  font-family: "montserrat-bold", sans-serif;
+  color: #ff4e50;
+  letter-spacing: 1px;
 }
 
-footer .wrapper-footer span {
+footer .wrapper-footer .bold,
+footer .wrapper-footer .partners_bot {
+  font-size: 14px;
+  font-family: "montserrat-bold", sans-serif;
+  color: #333;
+}
+
+footer .wrapper-footer .bottom_menu {
   float: left;
+  margin: 35px 92px 0 0;
+}
+
+footer .wrapper-footer .bottom_menu li a {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  font-family: "roboto-thin", sans-serif;
+  line-height: 24px;
+}
+
+footer .wrapper-footer .bottom_menu li .bold,
+footer .wrapper-footer .bottom_menu li .partners_bot {
+  font-size: 14px;
+  font-family: "montserrat-bold", sans-serif;
+  color: #333;
+}
+
+footer .wrapper-footer .partners_bot {
+  float: left;
+  margin: 39px 330px 0 0;
 }
 
 footer .wrapper-footer .designed {
-  float: right;
+  float: left;
   text-transform: uppercase;
+  margin-top: 39px;
+  width: 145px;
+}
+
+footer .wrapper-footer .designed p {
+  color: #ccc;
+  font-size: 10px;
+  font-family: "montserrat-bold", sans-serif, sans-serif;
+  margin: 0 0 8px 75px;
 }
 
 footer .wrapper-footer .designed a {
@@ -840,4 +950,5 @@ footer .wrapper-footer .designed a {
   width: 110px;
   height: 24px;
   background: url("../img/designed.png") 0 0 no-repeat;
+  margin-left: 40px;
 }
