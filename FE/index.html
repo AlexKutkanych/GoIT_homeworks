@@ -4,35 +4,67 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/styles.main.css" media="screen">
+    <!-- <link rel="stylesheet" href="style/dest/js-carousel.css" media="screen"> -->
     <!-- <link href="style/style-768.css" rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 959px)"> -->
     <!-- <link href="css/style-480.css" rel="stylesheet" media="only screen and (min-width: 480px) and (max-width: 767px)"> -->
     <!-- <link href="css/style-320.css" rel="stylesheet" media="only screen and (min-width: 320px) and (max-width: 479px)"> -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> <!ПІДКЛЮЧИТИ ФАЙЛ!!!!!-->
-    <!-- <script type="text/javascript" src="js/j-carousel.js"></script> -->
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> <!--ПІДКЛЮЧИТИ ФАЙЛ!!!!!-->
+    <script type="text/javascript" src="js/j-carousel.js"></script>
     <!-- <script type="text/javascript" src="js/script.js"></script> -->
-    <title>Urlaubsgluck</title>
+    <title>Urlaubsglück</title>
   </head>
   <body>
     <div class="wrapper-picture">
       <div class="wrapper-top">
         <div class="name">
-          <p>urlaubsgluck</p>
+          <a href="#">urlaubsglück</a>
         </div>
         <div class="button-wrapper">
-          <button type="button" name="button" class="button-login">Login</button>
+          <button type="button" name="button" class="button-login">Log in</button>
           <button type="button" name="button" class="button-signup">Sign up</button>
         </div>
         <div class="wrapper-slogan">
-          <p class="slogan">share your holiday dream</p>
-          <p>and find your partner to fullfill it</p>
+          <p class="slogan">share your <span class="slogan-row2">holiday dreams</span></p>
+          <p class="slogan1">And find the perfect partner to fullfill it</p>
           <button type="button" name="button" class="button-find">Find your holiday partner</button>
         </div>
       </div>
     </div>
+    <div class="wrapper-steps">
+      <p class="chapter-name">How Urlaubsglück works?</p>
+      <div class="jcarousel-wrapper">
+          <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+              <ul>
+                <li><img src="img/steps.jpg" width="1024" height="768" alt=""></li>
+                <li><img src="img/partners.png" width="1024" height="768" alt=""></li>
+                <li><img src="img/3.jpg" width="1024" height="768" alt=""></li>
+              </ul>
+          </div>
+          <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+          <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+      </div>
+      <!-- <div class="steps">
+        <section>
+          <a href="#" class="step1"></a>
+          <h4>Bradley Hunter</h4>
+          <p>Based in Chicago. I love playing tennis and loud music</p>
+        </section>
+        <section>
+          <a href="#" class="step2"></a>
+          <h4>Heather Walker</h4>
+          <p>I am a happy person that loves cats and climbing on mountains</p>
+        </section>
+        <section>
+          <a href="#" class="step3"></a>
+          <h4>Lucas Marsha</h4>
+          <p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+        </section> -->
+
+    </div>
     <!-- <div class="wrapper-steps">
-      <p class="chapter-name">How Urlaubsgluck work?</p>
+      <p class="chapter-name">How Urlaubsglück work?</p>
     </div> -->
     <div class="wrapper-partner">
       <p class="chapter-name">Meet a partner for your best holiday</p>
@@ -58,7 +90,7 @@
           <p>Based in Chicago. I love playing tennis and loud music</p>
         </section>
       </div>
-      <button type="button" name="button">See other partners</button>
+      <button type="button" name="button" class="button-partners">See other partners</button>
     </div>
     <div class="wrapper-ideas">
       <p class="chapter-name">Discover holiday activity ideas</p>
@@ -88,7 +120,7 @@
     <footer>
       <div class="wrapper-footer">
         <div class="name">
-          <p>urlaubsgluck</p>
+          <p>urlaubsglück</p>
         </div>
         <ul>
           <li><a href="#" class="bold">Company</a></li>

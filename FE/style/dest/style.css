@@ -1,3 +1,4 @@
+@import url(fonts.css);
 * {
   margin: 0;
   padding: 0; }
@@ -6,7 +7,8 @@ li {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 .wrapper-picture {
   width: 100%;
@@ -16,45 +18,113 @@ a {
   background-size: cover; }
 
 .wrapper-top, .wrapper-steps, .wrapper-partner, .wrapper-ideas, .wrapper-find, footer .wrapper-footer {
-  width: 960px;
+  width: 940px;
   margin: 0 auto; }
   .wrapper-top .name, .wrapper-steps .name, .wrapper-partner .name, .wrapper-ideas .name, .wrapper-find .name, footer .wrapper-footer .name {
     float: left;
     text-transform: uppercase;
     font-size: 20px;
-    margin-top: 40px; }
+    margin: 40px 0 0 1px;
+    font-family: "montserrat-bold";
+    color: white;
+    letter-spacing: 1.2px; }
   .wrapper-top .button-wrapper, .wrapper-steps .button-wrapper, .wrapper-partner .button-wrapper, .wrapper-ideas .button-wrapper, .wrapper-find .button-wrapper, footer .wrapper-footer .button-wrapper {
     float: right;
-    margin-top: 50px; }
-    .wrapper-top .button-wrapper .button-login, .wrapper-steps .button-wrapper .button-login, .wrapper-partner .button-wrapper .button-login, .wrapper-ideas .button-wrapper .button-login, .wrapper-find .button-wrapper .button-login, footer .wrapper-footer .button-wrapper .button-login, .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-ideas .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup, .wrapper-top .button-wrapper .wrapper-slogan .button-find, .wrapper-top .wrapper-slogan .button-wrapper .button-find, .wrapper-steps .button-wrapper .wrapper-slogan .button-find, .wrapper-steps .wrapper-slogan .button-wrapper .button-find, .wrapper-partner .button-wrapper .wrapper-slogan .button-find, .wrapper-partner .wrapper-slogan .button-wrapper .button-find, .wrapper-ideas .button-wrapper .wrapper-slogan .button-find, .wrapper-ideas .wrapper-slogan .button-wrapper .button-find, .wrapper-find .button-wrapper .wrapper-slogan .button-find, .wrapper-find .wrapper-slogan .button-wrapper .button-find, footer .wrapper-footer .button-wrapper .wrapper-slogan .button-find, footer .wrapper-footer .wrapper-slogan .button-wrapper .button-find {
-      background-color: none;
-      width: 100px;
-      height: 50px;
-      border-radius: 14px;
+    margin: 33px -2px 141px 0; }
+    .wrapper-top .button-wrapper .button-login, .wrapper-steps .button-wrapper .button-login, .wrapper-partner .button-wrapper .button-login, .wrapper-ideas .button-wrapper .button-login, .wrapper-find .button-wrapper .button-login, footer .wrapper-footer .button-wrapper .button-login, .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-ideas .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup {
+      background-color: transparent;
+      border: none;
+      width: 74px;
+      height: 36px;
       cursor: pointer;
-      pointer-events: painted; }
+      font-family: "montserrat-bold";
+      border-radius: 18px;
+      color: white; }
+    .wrapper-top .button-wrapper .button-login:hover, .wrapper-steps .button-wrapper .button-login:hover, .wrapper-partner .button-wrapper .button-login:hover, .wrapper-ideas .button-wrapper .button-login:hover, .wrapper-find .button-wrapper .button-login:hover, footer .wrapper-footer .button-wrapper .button-login:hover, .wrapper-top .button-wrapper .button-signup:hover, .wrapper-steps .button-wrapper .button-signup:hover, .wrapper-partner .button-wrapper .button-signup:hover, .wrapper-ideas .button-wrapper .button-signup:hover, .wrapper-find .button-wrapper .button-signup:hover, footer .wrapper-footer .button-wrapper .button-signup:hover {
+      background-color: #ff4e50; }
+    .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-ideas .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup {
+      width: 90px;
+      border: 2px solid white;
+      border-radius: 18px; }
   .wrapper-top .wrapper-slogan, .wrapper-steps .wrapper-slogan, .wrapper-partner .wrapper-slogan, .wrapper-ideas .wrapper-slogan, .wrapper-find .wrapper-slogan, footer .wrapper-footer .wrapper-slogan {
     width: 90%;
     clear: both;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: white; }
     .wrapper-top .wrapper-slogan .slogan, .wrapper-steps .wrapper-slogan .slogan, .wrapper-partner .wrapper-slogan .slogan, .wrapper-ideas .wrapper-slogan .slogan, .wrapper-find .wrapper-slogan .slogan, footer .wrapper-footer .wrapper-slogan .slogan {
-      font-size: 60px;
+      width: 490px;
+      height: 101px;
+      font-family: "montserrat-bold";
+      font-size: 52px;
       text-transform: uppercase;
-      color: white; }
+      text-align: center;
+      margin: 0 0 44px 180px; }
+      .wrapper-top .wrapper-slogan .slogan .slogan-row2, .wrapper-steps .wrapper-slogan .slogan .slogan-row2, .wrapper-partner .wrapper-slogan .slogan .slogan-row2, .wrapper-ideas .wrapper-slogan .slogan .slogan-row2, .wrapper-find .wrapper-slogan .slogan .slogan-row2, footer .wrapper-footer .wrapper-slogan .slogan .slogan-row2 {
+        margin: 0 0 0 -1px; }
+    .wrapper-top .wrapper-slogan .slogan1, .wrapper-steps .wrapper-slogan .slogan1, .wrapper-partner .wrapper-slogan .slogan1, .wrapper-ideas .wrapper-slogan .slogan1, .wrapper-find .wrapper-slogan .slogan1, footer .wrapper-footer .wrapper-slogan .slogan1 {
+      width: 405px;
+      height: 24px;
+      font-size: 24px;
+      font-family: 'roboto-thin';
+      margin: 0 0 41px 228px;
+      word-spacing: 1px; }
+    .wrapper-top .wrapper-slogan .button-find, .wrapper-steps .wrapper-slogan .button-find, .wrapper-partner .wrapper-slogan .button-find, .wrapper-ideas .wrapper-slogan .button-find, .wrapper-find .wrapper-slogan .button-find, footer .wrapper-footer .wrapper-slogan .button-find {
+      width: 225px;
+      height: 40px;
+      background-color: #ff4e50;
+      border-radius: 20px;
+      font-family: "montserrat-bold";
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-left: 314px;
+      letter-spacing: 0.4px; }
 
 .wrapper-steps {
   height: 600px; }
+  .wrapper-steps section {
+    width: 300px;
+    float: left; }
   .wrapper-steps .chapter-name {
-    font-family: Arial, sans-serif;
-    font-size: 30px;
+    text-align: center;
+    font-family: "montserrat-bold";
+    font-size: 22px;
+    color: #333; }
+  .wrapper-steps .step1, .wrapper-steps .step2, .wrapper-steps .step3 {
+    width: 300px;
+    height: 440px;
     display: block;
-    margin: 0 auto; }
+    background: url(../img/steps.jpg) 0 0 no-repeat; }
+  .wrapper-steps .step2 {
+    background-position: -320px 0; }
+  .wrapper-steps .step3 {
+    float: right;
+    background-position: -630px 0; }
 
 .wrapper-partner {
+  clear: both;
   height: 600px; }
+  .wrapper-partner .button-partners {
+    width: 192px;
+    height: 40px;
+    clear: both;
+    color: #ff4e50;
+    font-family: "montserrat-bold";
+    font-size: 14px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background-color: white; }
   .wrapper-partner .partners section {
     width: 125px;
     float: left; }
+  .wrapper-partner .partners h4 {
+    color: #333;
+    font-size: 14px;
+    font-family: "montserrat-bold"; }
+  .wrapper-partner .partners p {
+    color: #666;
+    font-size: 14px;
+    font-family: 'roboto-thin'; }
   .wrapper-partner .partners .partner {
     float: left;
     width: 125px;

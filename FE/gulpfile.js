@@ -9,7 +9,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('concat-css', function () {
-  return gulp.src(['style/dest/style.css','style/dest/style-768.css'])
+  return gulp.src(['style/dest/*.css'])
     .pipe(concatCss("styles.main.css"))
     .pipe(gulp.dest('style'));
 });
