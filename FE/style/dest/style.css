@@ -81,11 +81,8 @@ a {
       letter-spacing: 0.4px; }
 
 .wrapper-steps {
-  height: 600px;
+  height: 556px;
   position: relative; }
-  .wrapper-steps section {
-    width: 300px;
-    float: left; }
   .wrapper-steps .chapter-name {
     text-align: center;
     font-family: "montserrat-bold";
@@ -95,10 +92,79 @@ a {
 
 .wrapper-partner {
   clear: both;
-  height: 600px; }
+  height: 467px; }
+  .wrapper-partner .chapter-name {
+    text-align: center;
+    font-family: "montserrat-bold";
+    font-size: 22px;
+    color: #333;
+    margin: 0 0 32px 3px; }
+  .wrapper-partner .partners {
+    height: 233px;
+    margin-bottom: 20px; }
+    .wrapper-partner .partners .section1, .wrapper-partner .partners .section2, .wrapper-partner .partners .section3, .wrapper-partner .partners .section4 {
+      width: 200px;
+      float: left;
+      margin: 0 7px 0 19px; }
+      .wrapper-partner .partners .section1 .partner, .wrapper-partner .partners .section2 .partner, .wrapper-partner .partners .section3 .partner, .wrapper-partner .partners .section4 .partner, .wrapper-partner .partners .section2 .partner2, .wrapper-partner .partners .section3 .partner3, .wrapper-partner .partners .section4 .partner4 {
+        float: left;
+        width: 125px;
+        height: 125px;
+        margin: 0 20px 14px 35px;
+        background: url(../img/partners.png) 0 0 no-repeat; }
+      .wrapper-partner .partners .section1 h4, .wrapper-partner .partners .section2 h4, .wrapper-partner .partners .section3 h4, .wrapper-partner .partners .section4 h4 {
+        clear: both;
+        color: #333;
+        font-size: 14px;
+        font-family: "montserrat-bold";
+        margin: 0 0 11px 41px; }
+      .wrapper-partner .partners .section1 p, .wrapper-partner .partners .section2 p, .wrapper-partner .partners .section3 p, .wrapper-partner .partners .section4 p {
+        color: #666;
+        font-size: 14px;
+        font-family: 'roboto-thin';
+        text-align: center;
+        margin-left: -15px;
+        word-spacing: 1px; }
+    .wrapper-partner .partners .section2 {
+      width: 216px;
+      margin-right: 1px; }
+      .wrapper-partner .partners .section2 .partner2 {
+        background-position: -143px 0;
+        margin-left: 48px; }
+      .wrapper-partner .partners .section2 h4 {
+        margin: 0 0 12px 53px; }
+      .wrapper-partner .partners .section2 p {
+        width: 213px;
+        margin-left: 1px;
+        line-height: 18px; }
+    .wrapper-partner .partners .section3 {
+      margin-right: 40px; }
+      .wrapper-partner .partners .section3 .partner3 {
+        background-position: -285px 0;
+        margin: 0 0 14px 50px; }
+      .wrapper-partner .partners .section3 h4 {
+        margin: 0 0 12px 65px; }
+      .wrapper-partner .partners .section3 p {
+        width: 215px;
+        margin-left: 3px;
+        line-height: 17px; }
+    .wrapper-partner .partners .section4 {
+      float: right;
+      margin: 0 0 0 0; }
+      .wrapper-partner .partners .section4 .partner4 {
+        background-position: -432px 0;
+        margin: 0 0 14px 30px; }
+      .wrapper-partner .partners .section4 h4 {
+        margin: 0 0 12px 40px; }
+      .wrapper-partner .partners .section4 p {
+        width: 211px;
+        margin: 0 0 0 -14px;
+        line-height: 18px; }
   .wrapper-partner .button-partners {
     width: 192px;
     height: 40px;
+    display: block;
+    margin: 39px auto;
     clear: both;
     color: #ff4e50;
     font-family: "montserrat-bold";
@@ -106,33 +172,16 @@ a {
     border: 2px solid #ff4e50;
     border-radius: 20px;
     background-color: white; }
-  .wrapper-partner .partners section {
-    width: 125px;
-    float: left; }
-  .wrapper-partner .partners h4 {
-    color: #333;
-    font-size: 14px;
-    font-family: "montserrat-bold"; }
-  .wrapper-partner .partners p {
-    color: #666;
-    font-size: 14px;
-    font-family: 'roboto-thin'; }
-  .wrapper-partner .partners .partner {
-    float: left;
-    width: 125px;
-    height: 125px;
-    margin-right: 20px;
-    background: url(../img/partners.png) 0 0 no-repeat; }
-  .wrapper-partner .partners .partner2 {
-    background-position: -143px 0; }
-  .wrapper-partner .partners .partner3 {
-    background-position: -285px 0; }
-  .wrapper-partner .partners .partner4 {
-    background-position: -432px 0; }
 
 .wrapper-ideas {
   height: 1000px;
   position: relative; }
+  .wrapper-ideas .chapter-name {
+    text-align: center;
+    font-family: "montserrat-bold";
+    font-size: 22px;
+    color: #333;
+    margin: 0 0 34px 3px; }
   .wrapper-ideas p {
     color: white;
     font-size: 30px; }
