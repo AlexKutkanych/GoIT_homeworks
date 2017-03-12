@@ -24,7 +24,7 @@ a {
 //top
 .wrapper-picture {
   width: 100%;
-  height: 700px;
+  height: 693px;
   margin: 0 auto;
   background: url(../img/main-pic.jpg) 0 0 no-repeat;
   background-size: cover;
@@ -111,6 +111,7 @@ a {
 .wrapper-steps {
   @extend .wrapper-top;
   height: 600px;
+  position: relative;
   section {
     width: 300px;
     float: left;
@@ -120,22 +121,9 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
+    margin: 94px 0 34px 3px;
   }
-  .step1 {
-    width: 300px;
-    height: 440px;
-    display: block;
-    background: url(../img/steps.jpg) 0 0 no-repeat;
-  }
-  .step2 {
-    @extend .step1;
-    background-position: -320px 0;
-  }
-  .step3 {
-    @extend .step1;
-    float: right;
-    background-position: -630px 0;
-  }
+
 }
 
 

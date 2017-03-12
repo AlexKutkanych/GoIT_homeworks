@@ -12,7 +12,7 @@ a {
 
 .wrapper-picture {
   width: 100%;
-  height: 700px;
+  height: 693px;
   margin: 0 auto;
   background: url(../img/main-pic.jpg) 0 0 no-repeat;
   background-size: cover; }
@@ -81,7 +81,8 @@ a {
       letter-spacing: 0.4px; }
 
 .wrapper-steps {
-  height: 600px; }
+  height: 600px;
+  position: relative; }
   .wrapper-steps section {
     width: 300px;
     float: left; }
@@ -89,17 +90,8 @@ a {
     text-align: center;
     font-family: "montserrat-bold";
     font-size: 22px;
-    color: #333; }
-  .wrapper-steps .step1, .wrapper-steps .step2, .wrapper-steps .step3 {
-    width: 300px;
-    height: 440px;
-    display: block;
-    background: url(../img/steps.jpg) 0 0 no-repeat; }
-  .wrapper-steps .step2 {
-    background-position: -320px 0; }
-  .wrapper-steps .step3 {
-    float: right;
-    background-position: -630px 0; }
+    color: #333;
+    margin: 94px 0 34px 3px; }
 
 .wrapper-partner {
   clear: both;
