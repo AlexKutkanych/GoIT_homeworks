@@ -137,7 +137,7 @@
          url("../fonts/roboto-thin-webfont.woff") format('woff'),
          url("../fonts/roboto-thin-webfont.ttf") format('truetype'),
          url("../fonts/roboto-thin-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -154,7 +154,7 @@
 .jcarousel-wrapper1,
 .jcarousel-wrapper2,
 .jcarousel-wrapper3 {
-  width: 300px;
+  width: 31%;
   height: 400px;
   position: absolute;
   left: 2px;
@@ -223,164 +223,14 @@
 .jcarousel-wrapper3 {
   left: 644px;
 }
-/*MEDIA 768PX*/
-@font-face {
-  font-family: 'montserrat-bold';
-  src: url("../fonts/montserrat-bold-webfont.eot");
-  src: url("../fonts/montserrat-bold-webfont.woff2") format('woff2'),
-         url("../fonts/montserrat-bold-webfont.woff") format('woff'),
-         url("../fonts/montserrat-bold-webfont.ttf") format('truetype'),
-         url("../fonts/montserrat-bold-webfont.svg#league_gothicregular") format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserrat-regular';
-  src: url("../fonts/montserrat-regular-webfont.eot");
-  src: url("../fonts/montserrat-regular-webfont.woff2") format('woff2'),
-         url("../fonts/montserrat-regular-webfont.woff") format('woff'),
-         url("../fonts/montserrat-regular-webfont.ttf") format('truetype'),
-         url("../fonts/montserrat-regular-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-black';
-  src: url("../fonts/roboto-black-webfont.eot");
-  src: url("../fonts/roboto-black-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-black-webfont.woff") format('woff'),
-         url("../fonts/roboto-black-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-black-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-blackitalic';
-  src: url("../fonts/roboto-blackitalic-webfont.eot");
-  src: url("../fonts/roboto-blackitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-blackitalic-webfont.woff") format('woff'),
-         url("../fonts/roboto-blackitalic-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-blackitalic-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto-bold';
-  src: url("../fonts/roboto-bold-webfont.eot");
-  src: url("../fonts/roboto-bold-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-bold-webfont.woff") format('woff'),
-         url("../fonts/roboto-bold-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-bold-webfont.svg#league_gothicregular") format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-bolditalic';
-  src: url("../fonts/roboto-bolditalic-webfont.eot");
-  src: url("../fonts/roboto-bolditalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-bolditalic-webfont.woff") format('woff'),
-         url("../fonts/roboto-bolditalic-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-bolditalic-webfont.svg#league_gothicregular") format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto-italic';
-  src: url("../fonts/roboto-italic-webfont.eot");
-  src: url("../fonts/roboto-italic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-italic-webfont.woff") format('woff'),
-         url("../fonts/roboto-italic-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-italic-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto-light';
-  src: url("../fonts/roboto-light-webfont.eot");
-  src: url("../fonts/roboto-light-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-light-webfont.woff") format('woff'),
-         url("../fonts/roboto-light-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-light-webfont.svg#league_gothicregular") format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-lightitalic';
-  src: url("../fonts/roboto-lightitalic-webfont.eot");
-  src: url("../fonts/roboto-lightitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-lightitalic-webfont.woff") format('woff'),
-         url("../fonts/roboto-lightitalic-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-lightitalic-webfont.svg#league_gothicregular") format('svg');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto-medium';
-  src: url("../fonts/roboto-medium-webfont.eot");
-  src: url("../fonts/roboto-medium-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-medium-webfont.woff") format('woff'),
-         url("../fonts/roboto-medium-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-medium-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-mediumitalic';
-  src: url("../fonts/roboto-mediumitalic-webfont.eot");
-  src: url("../fonts/roboto-mediumitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-mediumitalic-webfont.woff") format('woff'),
-         url("../fonts/roboto-mediumitalic-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-mediumitalic-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'roboto-regular';
-  src: url("../fonts/roboto-regular-webfont.eot");
-  src: url("../fonts/roboto-regular-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-regular-webfont.woff") format('woff'),
-         url("../fonts/roboto-regular-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-regular-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-thin';
-  src: url("../fonts/roboto-thin-webfont.eot");
-  src: url("../fonts/roboto-thin-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-thin-webfont.woff") format('woff'),
-         url("../fonts/roboto-thin-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-thin-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'roboto-thinitalic';
-  src: url("../fonts/roboto-thinitalic-webfont.eot");
-  src: url("../fonts/roboto-thinitalic-webfont.woff2") format('woff2'),
-         url("../fonts/roboto-thinitalic-webfont.woff") format('woff'),
-         url("../fonts/roboto-thinitalic-webfont.ttf") format('truetype'),
-         url("../fonts/roboto-thinitalic-webfont.svg#league_gothicregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 li {
@@ -396,7 +246,7 @@ a {
   width: 100%;
   height: 693px;
   margin: 0 auto;
-  background: url("../img/main-pic.jpg") 0 0 no-repeat;
+  background: url("../img/main-pic.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -406,7 +256,7 @@ a {
 .wrapper-ideas,
 .wrapper-find,
 footer .wrapper-footer {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -441,7 +291,7 @@ footer .wrapper-footer .name a:hover {
 .wrapper-find .button-wrapper,
 footer .wrapper-footer .button-wrapper {
   float: right;
-  margin: 33px -2px 141px 0;
+  margin: 33px 18px 141px 0;
 }
 
 .wrapper-top .button-wrapper .button-login,
@@ -579,7 +429,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
-  margin: 94px 0 34px 3px;
+  margin: 97px 0 34px -18px;
 }
 
 .wrapper-partner {
@@ -592,7 +442,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
-  margin: 0 0 32px 3px;
+  margin: 0 0 32px -21px;
 }
 
 .wrapper-partner .partners {
@@ -687,7 +537,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
 
 .wrapper-partner .partners .section4 {
   float: right;
-  margin: 0 0 0 0;
+  margin-right: 20px;
 }
 
 .wrapper-partner .partners .section4 .partner4 {
@@ -735,7 +585,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
-  margin: 0 0 34px 3px;
+  margin: 0 0 34px -17px;
 }
 
 .wrapper-ideas p {
@@ -781,7 +631,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
 .wrapper-ideas .idea3 {
   float: right;
   background-position: -640px 0;
-  margin-right: -2px;
+  margin-right: 19px;
 }
 
 .wrapper-ideas .idea3_desc {
@@ -844,14 +694,14 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   font-family: "montserrat-bold", sans-serif;
   font-size: 22px;
   color: #333;
-  margin: 94px 0 30px 3px;
+  margin: 94px 0 30px -17px;
 }
 
 .wrapper-find p {
   color: #333;
   font-family: 'roboto-light', sans-serif;
   font-size: 18px;
-  margin: 0 -4px 35px 0;
+  margin: 0 0 35px -21px;
 }
 
 .wrapper-find .form_find {
@@ -862,9 +712,9 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   border-radius: 4px;
   box-shadow: 0 1px 0 #eee;
   font-size: 14px;
-  margin: -1px 9px 100px 8px;
+  margin: -1px 6px 100px -20px;
   text-indent: 16px;
-  font-weight: "roboto-thin", sans-serif;
+  font-family: "roboto-thin", sans-serif;
   color: #999;
 }
 
@@ -951,4 +801,302 @@ footer .wrapper-footer .designed a {
   height: 24px;
   background: url("../img/designed.png") 0 0 no-repeat;
   margin-left: 40px;
+}
+
+/*MEDIA 768PX*/
+
+@media only screen and (min-width: 768px) and (max-width: 956px) {
+  .wrapper-top,
+  .wrapper-steps,
+  .wrapper-partner,
+  .wrapper-ideas,
+  .wrapper-find,
+  footer .wrapper-footer {
+    width: 742px;
+    max-width: 58.75rem;
+    margin: 0 auto;
+  }
+
+  .wrapper-top .name,
+  .wrapper-steps .name,
+  .wrapper-partner .name,
+  .wrapper-ideas .name,
+  .wrapper-find .name,
+  footer .wrapper-footer .name {
+    margin: 42px 0 0 37px;
+  }
+
+  .wrapper-top .button-wrapper,
+  .wrapper-steps .button-wrapper,
+  .wrapper-partner .button-wrapper,
+  .wrapper-ideas .button-wrapper,
+  .wrapper-find .button-wrapper,
+  footer .wrapper-footer .button-wrapper {
+    margin: 36px 35px 142px 0;
+  }
+
+  .wrapper-top .wrapper-slogan,
+  .wrapper-steps .wrapper-slogan,
+  .wrapper-partner .wrapper-slogan,
+  .wrapper-ideas .wrapper-slogan,
+  .wrapper-find .wrapper-slogan,
+  footer .wrapper-footer .wrapper-slogan {
+    margin-left: 53px;
+  }
+
+  .wrapper-top .wrapper-slogan .slogan,
+  .wrapper-steps .wrapper-slogan .slogan,
+  .wrapper-partner .wrapper-slogan .slogan,
+  .wrapper-ideas .wrapper-slogan .slogan,
+  .wrapper-find .wrapper-slogan .slogan,
+  footer .wrapper-footer .wrapper-slogan .slogan {
+    margin: 0 0 45px 11%;
+  }
+
+  .wrapper-top .wrapper-slogan .slogan1,
+  .wrapper-steps .wrapper-slogan .slogan1,
+  .wrapper-partner .wrapper-slogan .slogan1,
+  .wrapper-ideas .wrapper-slogan .slogan1,
+  .wrapper-find .wrapper-slogan .slogan1,
+  footer .wrapper-footer .wrapper-slogan .slogan1 {
+    margin-left: 18%;
+  }
+
+  .wrapper-top .wrapper-slogan .button-find,
+  .wrapper-steps .wrapper-slogan .button-find,
+  .wrapper-partner .wrapper-slogan .button-find,
+  .wrapper-ideas .wrapper-slogan .button-find,
+  .wrapper-find .wrapper-slogan .button-find,
+  footer .wrapper-footer .wrapper-slogan .button-find {
+    margin-left: 31%;
+  }
+
+  .wrapper-steps {
+    width: 742px;
+  }
+
+  .wrapper-steps .chapter-name {
+    margin-top: 98px;
+    margin-left: 8px;
+  }
+
+  .wrapper-steps .jcarousel-wrapper1 {
+    width: 32%;
+    margin-left: -4px;
+    background-position-x: 0;
+  }
+
+  .wrapper-steps .jcarousel-wrapper1 .jcarousel-control-prev,
+  .wrapper-steps .jcarousel-wrapper1 .jcarousel-control-next {
+    top: 39px;
+  }
+
+  .wrapper-steps .jcarousel-wrapper2 {
+    width: 32%;
+    margin-left: -68px;
+    background-position-x: 0;
+  }
+
+  .wrapper-steps .jcarousel-wrapper2 .jcarousel-control-prev {
+    left: 11px;
+    top: 39px;
+  }
+
+  .wrapper-steps .jcarousel-wrapper2 .jcarousel-control-next {
+    right: 13px;
+    top: 39px;
+  }
+
+  .wrapper-steps .jcarousel-wrapper3 {
+    width: 32%;
+    margin-left: -133px;
+    background-position-x: 0;
+  }
+
+  .wrapper-steps .jcarousel-wrapper3 .jcarousel-control-prev {
+    left: 20px;
+    top: 39px;
+  }
+
+  .wrapper-steps .jcarousel-wrapper3 .jcarousel-control-next {
+    right: 22px;
+    top: 39px;
+  }
+
+  .wrapper-partner {
+    width: 742px;
+    height: 725px;
+  }
+
+  .wrapper-partner .chapter-name {
+    margin-left: -3px;
+  }
+
+  .wrapper-partner .partners {
+    height: 492px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .wrapper-partner .partners .section1,
+  .wrapper-partner .partners .section2,
+  .wrapper-partner .partners .section3,
+  .wrapper-partner .partners .section4 {
+    margin-left: 30px;
+    margin-bottom: 55px;
+    margin-right: 12px;
+  }
+
+  .wrapper-partner .partners .section2 p {
+    margin-left: 0px;
+  }
+
+  .wrapper-partner .partners .section3 {
+    float: none;
+    margin-left: 10px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  .wrapper-partner .partners .section3 h4 {
+    margin-bottom: 11px;
+  }
+
+  .wrapper-partner .partners .section4 h4 {
+    margin-left: 39px;
+    margin-bottom: 11px;
+  }
+
+  .wrapper-ideas {
+    clear: both;
+  }
+
+  .wrapper-ideas .chapter-name {
+    margin-left: 2px;
+  }
+
+  .wrapper-ideas .idea {
+    margin-left: -1px;
+    margin-right: 21px;
+    width: 235px;
+  }
+
+  .wrapper-ideas .idea1_desc,
+  .wrapper-ideas .idea2_desc,
+  .wrapper-ideas .idea3_desc,
+  .wrapper-ideas .idea4_desc,
+  .wrapper-ideas .idea5_desc,
+  .wrapper-ideas .idea6_desc,
+  .wrapper-ideas .idea7_desc {
+    left: 15px;
+    top: 202px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .wrapper-ideas .idea2 {
+    margin-right: 18px;
+  }
+
+  .wrapper-ideas .idea2_desc {
+    left: 306px;
+    top: 193px;
+    width: 137px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .wrapper-ideas .idea3 {
+    margin-right: 0px;
+  }
+
+  .wrapper-ideas .idea3_desc {
+    left: 536px;
+    top: 189px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .wrapper-ideas .idea4_desc,
+  .wrapper-ideas .idea5_desc {
+    left: 78px;
+    top: 534px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .wrapper-ideas .idea5 {
+    margin-right: 0px;
+    width: 488px;
+    background-position-x: -387px;
+  }
+
+  .wrapper-ideas .idea5_desc {
+    left: 377px;
+    top: 533px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .wrapper-ideas .idea6 {
+    margin-right: 16px;
+    width: 493px;
+    background-position-x: -60px;
+  }
+
+  .wrapper-ideas .idea6_desc,
+  .wrapper-ideas .idea7_desc {
+    left: 185px;
+    top: 863px;
+    letter-spacing: 0.6px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .wrapper-ideas .idea7 {
+    margin-right: 0px;
+    background-position-x: -666px;
+  }
+
+  .wrapper-ideas .idea7_desc {
+    left: 574px;
+    top: 862px;
+    letter-spacing: .6px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .wrapper-find .chapter-name {
+    margin-left: 1px;
+    margin-bottom: 29px;
+  }
+
+  .wrapper-find p {
+    margin-left: 2px;
+    margin-bottom: 36px;
+  }
+
+  .wrapper-find .form_find {
+    margin-left: 0px;
+  }
+
+  .wrapper-footer .name {
+    width: 227px;
+    margin-top: 39px;
+    margin-left: 27px;
+  }
+
+  .wrapper-footer .bottom_menu {
+    margin-top: 34px;
+  }
 }

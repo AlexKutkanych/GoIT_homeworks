@@ -1,16 +1,16 @@
-$wrapper-width: 940px;
+$wrapper-width: 956px;
 $main-font: 'montserrat-bold', sans-serif;
 $secondary-font: 'roboto-thin', sans-serif;
 $text-color: #333;
 $main-color:  #ff4e50;
 
-@import "fonts.css";
-
-
 * {
   margin: 0;
   padding: 0;
+}
 
+html, body {
+  overflow-x: hidden;
 }
 
 li {
@@ -27,12 +27,12 @@ a {
   width: 100%;
   height: 693px;
   margin: 0 auto;
-  background: url(../img/main-pic.jpg) 0 0 no-repeat;
+  background: url(../img/main-pic.jpg) no-repeat center;
   background-size: cover;
 }
 
 .wrapper-top {
-  width: $wrapper-width;
+  width: 960px;
   margin: 0 auto;
   .name {
     float: left;
@@ -48,7 +48,7 @@ a {
   }
   .button-wrapper {
     float: right;
-    margin: 33px -2px 141px 0;
+    margin: 33px 18px 141px 0;
     .button-login {
       background-color: rgba(0, 0, 0, 0);
       border: none;
@@ -124,7 +124,7 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 94px 0 34px 3px;
+    margin: 97px 0 34px -18px;
   }
 }
 
@@ -139,7 +139,7 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 0 0 32px 3px;
+    margin: 0 0 32px -21px;
   }
   .partners {
     height: 233px;
@@ -209,7 +209,7 @@ a {
     .section4 {
       @extend .section1;
       float: right;
-      margin: 0 0 0 0;
+      margin-right: 20px;
       .partner4 {
         @extend .partner;
         background-position: -432px 0;
@@ -255,8 +255,9 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 0 0 34px 3px;
+    margin: 0 0 34px -17px;
   }
+
   p {
     color: white;
     font-size: 30px;
@@ -290,7 +291,7 @@ a {
   .idea3 {
     float: right;
     background-position: -640px 0;
-    margin-right: -2px;
+    margin-right: 19px;
   }
   .idea3_desc {
     @extend .idea1_desc;
@@ -349,13 +350,13 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 94px 0 30px 3px;
+    margin: 94px 0 30px -17px;
   }
   p {
     color: $text-color;
     font-family: 'roboto-light', sans-serif;
     font-size: 18px;
-    margin: 0 -4px 35px 0;
+    margin: 0 0 35px -21px;
   }
   .form_find {
     width: 240px;
@@ -365,9 +366,9 @@ a {
     border-radius: 4px;
     box-shadow: 0 1px 0 #eee;
     font-size: 14px;
-    margin: -1px 9px 100px 8px;
+    margin: -1px 6px 100px -20px;
     text-indent: 16px;
-    font-weight: $secondary-font;
+    font-family: $secondary-font;
     color: #999;
   }
   .button-search {
@@ -452,3 +453,5 @@ footer {
   }
   }
 }
+
+@import "style-768.scss";
