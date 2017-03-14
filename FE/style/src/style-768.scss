@@ -1,6 +1,6 @@
 /*MEDIA 768PX*/
 
-@media only screen and (min-width: 768px) and (max-width: 956px) {
+@media only screen and (min-width: 768px) and (max-width: 964px) {
   .wrapper-top {
     width: 742px;
     // max-width: 58.75rem;
@@ -31,6 +31,9 @@
     }
     .steps-mobile {
       display: none;
+    }
+    .tablet {
+      display: block;
     }
     .chapter-name {
       margin-top: 98px;

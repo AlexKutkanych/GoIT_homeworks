@@ -1,4 +1,4 @@
-$wrapper-width: 956px;
+$wrapper-width: 960px;
 $main-font: 'montserrat-bold', sans-serif;
 $secondary-font: 'roboto-thin', sans-serif;
 $text-color: #333;
@@ -38,7 +38,7 @@ a {
     float: left;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 40px 0 0 1px;
+    margin: 42px 0 0 9px;
     font-family: $main-font;
     color: white;
     letter-spacing: 1.2px;
@@ -48,7 +48,7 @@ a {
   }
   .button-wrapper {
     float: right;
-    margin: 33px 18px 141px 0;
+    margin: 34px 11px 141px 0;
     .button-login {
       background-color: rgba(0, 0, 0, 0);
       border: none;
@@ -82,7 +82,7 @@ a {
       font-size: 52px;
       text-transform: uppercase;
       text-align: center;
-      margin: 0 0 44px 180px;
+      margin: 0 0 45px 185px;
       .slogan-row2 {
         margin: 0 0 0 -1px;
       }
@@ -92,8 +92,8 @@ a {
       height: 24px;
       font-size: 24px;
       font-family: $secondary-font;
-      margin: 0 0 41px 228px;
-      word-spacing: 1px;
+      margin: 0 0 41px 233px;
+      word-spacing: 1.6px;
     }
     .button-find {
       width: 225px;
@@ -104,7 +104,7 @@ a {
       border: none;
       color: white;
       cursor: pointer;
-      margin-left: 314px;
+      margin-left: 319px;
       letter-spacing: 0.4px;
     }
     .button-find:hover{
@@ -124,9 +124,12 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 97px 0 34px -18px;
+    margin: 97px 0 34px -4px;
   }
   .steps-mobile {
+    display: none;
+  }
+  .tablet {
     display: none;
   }
 }
@@ -142,7 +145,7 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 0 0 32px -21px;
+    margin: 0 0 32px -3px;
   }
   .partners {
     height: 233px;
@@ -150,7 +153,7 @@ a {
     .section1 {
       width: 200px;
       float: left;
-      margin: 0 7px 0 19px;
+      margin-left: 26px;
       .partner {
         float: left;
         width: 125px;
@@ -177,7 +180,7 @@ a {
     .section2 {
       @extend .section1;
       width: 216px;
-      margin-right: 1px;
+      margin-right: -6px;
       .partner2 {
         @extend .partner;
         background-position: -143px 0;
@@ -188,13 +191,12 @@ a {
       }
       p {
         width: 213px;
-        margin-left: 1px;
-        line-height: 18px;
+        line-height: 17px;
       }
     }
     .section3 {
       @extend .section1;
-      margin-right: 40px;
+      margin-right: 26px;
       .partner3 {
         @extend .partner;
         background-position: -285px 0;
@@ -212,7 +214,7 @@ a {
     .section4 {
       @extend .section1;
       float: right;
-      margin-right: 20px;
+      margin-right: 13px;
       .partner4 {
         @extend .partner;
         background-position: -432px 0;
@@ -258,7 +260,7 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 0 0 34px -17px;
+    margin: 0 0 34px -2px;
   }
 
   p {
@@ -272,12 +274,12 @@ a {
     height: 310px;
     background: url(../img/ideas.jpg) 0 0 no-repeat;
     border-radius: 4px;
-    margin: 0 17px 20px 3px;
+    margin: 0 17px 20px 10px;
   }
   .idea1_desc {
     position: absolute;
     top: 200px;
-    left: 53px;
+    left: 59px;
     color: white;
     font-size: 22px;
     font-family: $main-font;
@@ -289,18 +291,18 @@ a {
   }
   .idea2_desc {
     @extend .idea1_desc;
-    left: 367px;
+    left: 373px;
   }
   .idea3 {
     float: right;
     background-position: -640px 0;
-    margin-right: 19px;
+    margin-right: 10px;
   }
   .idea3_desc {
     @extend .idea1_desc;
     width: 182px;
     top: 187px;
-    left: 702px;
+    left: 708px;
   }
   .idea4 {
     float: left;
@@ -309,29 +311,30 @@ a {
   .idea4_desc {
     @extend .idea1_desc;
     top: 531px;
-    left: 116px;
+    left: 122px;
   }
   .idea5 {
     float: left;
-    width: 617px;
+    width: 619px;
     background-position: -321px -330px;
-    margin-left: 3px;
+    margin-left: 4px;
     margin-right: 0px;
   }
   .idea5_desc {
-    @extend .idea4_desc;
-    left: 509px;
+    @extend .idea1_desc;
+    top: 531px;
+    left: 516px;
   }
   .idea6 {
     float: left;
     width: 620px;
     background-position: 0 -660px;
-    margin-right: 14px;
+    margin-right: 10px;
   }
   .idea6_desc {
     @extend .idea1_desc;
     top: 861px;
-    left: 253px;
+    left: 260px;
   }
   .idea7 {
     float: left;
@@ -340,7 +343,7 @@ a {
   }
   .idea7_desc {
     @extend .idea6_desc;
-    left: 740px;
+    left: 746px;
   }
 }
 
@@ -353,30 +356,30 @@ a {
     font-family: $main-font;
     font-size: 22px;
     color: $text-color;
-    margin: 94px 0 30px -17px;
+    margin: 94px 0 30px -3px;
   }
   p {
     color: $text-color;
     font-family: 'roboto-light', sans-serif;
     font-size: 18px;
-    margin: 0 0 35px -21px;
+    margin: 0 0 38px -2px;
   }
   .form_find {
-    width: 240px;
-    height: 40px;
+    width: 238px;
+    height: 38px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 1px 0 #eee;
     font-size: 14px;
-    margin: -1px 6px 100px -20px;
-    text-indent: 16px;
+    margin: -1px 5px 100px -1px;
+    text-indent: 14px;
     font-family: $secondary-font;
     color: #999;
   }
   .button-search {
     width: 160px;
-    height: 40px;
+    height: 39px;
     background-color: $main-color;
     border-radius: 20px;
     font-family: $main-font;
@@ -396,6 +399,7 @@ footer {
   .wrapper-footer{
   @extend .wrapper-top;
   .name{
+    margin: 39px 0 0 8px;
     a {
       float: left;
       text-transform: uppercase;
@@ -410,17 +414,18 @@ footer {
     font-size: 14px;
     font-family: $main-font;
     color: $text-color;
+    margin-bottom: 3px;
   }
   .bottom_menu {
     float: left;
-    margin: 35px 92px 0 0;
+    margin: 34px 93px 0 0;
     li {
       a {
         display: block;
         color: #666;
         font-size: 14px;
         font-family: $secondary-font;
-        line-height: 24px;
+        line-height: 25px;
       }
       .bold {
         font-size: 14px;
@@ -432,19 +437,20 @@ footer {
   .partners_bot {
     @extend .bold;
     float: left;
-    margin: 39px 330px 0 0;
+    margin: 37px 330px 0 0;
 
   }
   .designed {
     float: left;
     text-transform: uppercase;
     margin-top: 39px;
-    width: 145px;
+    width: 153px;
     p {
       color: #ccc;
       font-size: 10px;
       font-family: $main-font, sans-serif;
-      margin: 0 0 8px 75px;
+      margin: 0 0 6px 70px;
+      letter-spacing: 1px;
     }
     a {
       display: block;
