@@ -255,6 +255,9 @@ a {
   @extend .wrapper-top;
   height: 1032px;
   position: relative;
+  .mobile-ideas {
+    display: none;
+  }
   .chapter-name {
     text-align: center;
     font-family: $main-font;
