@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function() {
     gulp.src('style/src/*.scss')
@@ -14,9 +15,15 @@ gulp.task('concat-css', function () {
     .pipe(gulp.dest('style'));
 });
 
+gulp.task('imagemin', () =>
+    gulp.src('img/src/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('img/dist'))
+);
+
 //Watch task
 gulp.task('sass-w',function() {
-    gulp.watch(['style/src/*.scss', 'style/*.css', 'style/dest/*.css'], ['concat-css', 'sass']);
+    gulp.watch(['style/src/*.scss', 'style/*.css', 'style/dest/*.css', 'img/dest/*.png', 'img/src/*.png', 'img/dest/*.jpg', 'img/src/*.jpg'], ['concat-css', 'sass', 'imagemin']);
 });
 
 // var gulp = require('gulp');

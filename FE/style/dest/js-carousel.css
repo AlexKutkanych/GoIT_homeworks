@@ -26,14 +26,14 @@
     left: 21px;
     width: 30px;
     height: 56px;
-    background: url(../img/arrows.png) 0 0 no-repeat; }
+    background: url(../img/dist/arrows.png) 0 0 no-repeat; }
   .jcarousel-wrapper1 .jcarousel-control-next, .jcarousel-wrapper2 .jcarousel-control-next, .jcarousel-wrapper3 .jcarousel-control-next {
     position: absolute;
     top: 152px;
     right: 20px;
     width: 30px;
     height: 56px;
-    background-image: url(../img/arrows.png);
+    background-image: url(../img/dist/arrows.png);
     background-position: 31px 0; }
 
 .jcarousel-wrapper2 {

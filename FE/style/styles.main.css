@@ -201,7 +201,7 @@
   left: 21px;
   width: 30px;
   height: 56px;
-  background: url("../img/arrows.png") 0 0 no-repeat;
+  background: url("../img/dist/arrows.png") 0 0 no-repeat;
 }
 
 .jcarousel-wrapper1 .jcarousel-control-next,
@@ -212,7 +212,7 @@
   right: 20px;
   width: 30px;
   height: 56px;
-  background-image: url("../img/arrows.png");
+  background-image: url("../img/dist/arrows.png");
   background-position: 31px 0;
 }
 
@@ -246,7 +246,7 @@ a {
   width: 100%;
   height: 693px;
   margin: 0 auto;
-  background: url("../img/main-pic.jpg") no-repeat center;
+  background: url("../img/dist/main-pic.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -478,7 +478,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   width: 125px;
   height: 125px;
   margin: 0 20px 14px 35px;
-  background: url("../img/partners.png") 0 0 no-repeat;
+  background: url("../img/dist/partners.png") 0 0 no-repeat;
 }
 
 .wrapper-partner .partners .section1 h4,
@@ -609,7 +609,7 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   float: left;
   width: 300px;
   height: 310px;
-  background: url("../img/ideas.jpg") 0 0 no-repeat;
+  background: url("../img/dist/ideas.jpg") 0 0 no-repeat;
   border-radius: 4px;
   margin: 0 17px 20px 10px;
 }
@@ -816,7 +816,7 @@ footer .wrapper-footer .designed a {
   display: block;
   width: 110px;
   height: 24px;
-  background: url("../img/designed.png") 0 0 no-repeat;
+  background: url("../img/dist/designed.png") 0 0 no-repeat;
   margin-left: 40px;
 }
 
@@ -1422,7 +1422,7 @@ footer .wrapper-footer .designed a {
     display: block;
     width: 300px;
     height: 120px;
-    background-image: url("../img/mobile-ideas.jpg");
+    background-image: url("../img/dist/mobile-ideas.jpg");
     margin-bottom: 10px;
     margin-left: 9px;
     border-radius: 4px;
