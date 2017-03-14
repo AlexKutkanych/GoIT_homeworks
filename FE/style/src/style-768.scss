@@ -3,7 +3,7 @@
 @media only screen and (min-width: 768px) and (max-width: 956px) {
   .wrapper-top {
     width: 742px;
-    max-width: 58.75rem;
+    // max-width: 58.75rem;
     margin: 0 auto;
     .name {
       margin: 42px 0 0 37px;
@@ -26,6 +26,12 @@
   }
   .wrapper-steps {
     width: 742px;
+    .desktop {
+      display: none;
+    }
+    .steps-mobile {
+      display: none;
+    }
     .chapter-name {
       margin-top: 98px;
       margin-left: 8px;
@@ -202,14 +208,32 @@
       margin-left: 0px;
     }
   }
-  .wrapper-footer {
-    .name {
-      width: 227px;
-      margin-top: 39px;
-      margin-left: 27px;
-    }
-    .bottom_menu {
-      margin-top: 34px;
+  footer {
+    .wrapper-footer {
+      .name {
+        width: 227px;
+        margin-top: 39px;
+        margin-left: 27px;
+      }
+      .bottom_menu {
+        margin-right: 104px;
+        margin-top: 34px;
+        .bold {
+          margin-bottom: 5px;
+        }
+      }
+      .partners_bot {
+        margin-top: 38px;
+        margin-right: 82px;
+      }
+      .designed {
+        margin-top: 38px;
+        p {
+          width: 83px;
+          letter-spacing: .8px;
+          margin-left: 70px;
+        }
+      }
     }
   }
 }

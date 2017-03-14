@@ -126,6 +126,9 @@ a {
     color: $text-color;
     margin: 97px 0 34px -18px;
   }
+  .steps-mobile {
+    display: none;
+  }
 }
 
 //partners
@@ -455,3 +458,4 @@ footer {
 }
 
 @import "style-768.scss";
+@import "style-320.scss";
