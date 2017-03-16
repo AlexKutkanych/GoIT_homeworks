@@ -12,7 +12,8 @@
     <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> <!--ПІДКЛЮЧИТИ ФАЙЛ!!!!!-->
     <script type="text/javascript" src="js/j-carousel.js"></script>
-    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> <!--Masonry cdn-->
+    <script type="text/javascript" src="js/ajax_find.js"></script>
     <title>Urlaubsglück</title>
   </head>
   <body>
@@ -122,8 +123,15 @@
       </div>
       <button type="button" name="button" class="button-partners">See other partners</button>
     </div>
-    <div class="wrapper-ideas">
-      <p class="chapter-name">Discover holiday activity ideas</p>
+    <div class="wrapper-ideas" id="results">
+      <!-- <div class="grid">
+        <div class="grid-item">
+          <a href="#" class="idea idea1"></a>
+          <a href="#"><p class="idea1_desc">Sport and Activity</p></a>
+        </div>
+        <div class="grid-item">...</div>
+      </div> -->
+      <!-- <p class="chapter-name">Discover holiday activity ideas</p>
       <a href="#" class="idea idea1"></a>
       <a href="#"><p class="idea1_desc">Sport and Activity</p></a>
       <a href="#" class="idea idea2"></a>
@@ -146,14 +154,14 @@
         <a href="#" class="mobile-idea5"></a>
         <a href="#" class="mobile-idea6"></a>
         <a href="#" class="mobile-idea7"></a>
-      </div>
+      </div> -->
     </div>
     <div class="wrapper-find">
       <p class="chapter-name">Discover holiday activity ideas</p>
       <p>Hi! What are your holiday interests?</p>
       <form action="index.html" method="post">
-        <input type="text" placeholder="Enter your interests" class="form_find">
-        <button type="button" name="button" class="button-search">Search partners</button>
+        <input type="text" name="search" placeholder="Enter your interests" id="find_form" class="form_find">
+        <button type="button" name="button" class="button-search" id="find_button">Search partners</button>
       </form>
     </div>
     <footer>

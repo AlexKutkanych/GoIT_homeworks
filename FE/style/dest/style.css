@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html, body {
   overflow-x: hidden; }
@@ -188,7 +189,22 @@ a {
 
 .wrapper-ideas {
   height: 1032px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .wrapper-ideas .description {
+    display: block;
+    width: 250px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%; }
+  .wrapper-ideas .small {
+    display: block;
+    float: left;
+    position: relative; }
+  .wrapper-ideas .grid {
+    background: red;
+    max-width: 1200px; }
   .wrapper-ideas .mobile-ideas {
     display: none; }
   .wrapper-ideas .chapter-name {
@@ -349,7 +365,7 @@ footer {
       margin-left: 40px; }
 
 /*MEDIA 768PX*/
-@media only screen and (min-width: 777px) and (max-width: 976px) {
+@media only screen and (min-width: 776px) and (max-width: 976px) {
   .wrapper-top, .wrapper-steps, .wrapper-partner, .wrapper-ideas, .wrapper-find, footer .wrapper-footer {
     width: 768px;
     margin: 0 auto; }

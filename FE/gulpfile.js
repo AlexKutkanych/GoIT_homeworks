@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
-const imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function() {
     gulp.src('style/src/*.scss')
