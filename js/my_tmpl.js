@@ -1,5 +1,5 @@
-"use strict";
-var [myTest, answers] = [
+// "use strict";
+let [myTest, answers] = [
   [
   {
     question: '1. Which country is the largest producer of olive oil?',
@@ -52,7 +52,7 @@ localStorage.setItem('myTest', JSON.stringify(myTest));
 myTest = JSON.parse(localStorage.getItem('myTest'));
 
 //описую шаблон, який ставить HTML фрагмент на сторінку з використанням зворотньої кавички
-var PAGE = obj => `
+const page = obj => `
 <p class="title">Test</p>
 <form id="form">
 ${obj.map(obj => `
@@ -68,32 +68,32 @@ ${obj.map(obj => `
   </form>
   `;
 // ставимо шаблон на строніку
-var parent = document.getElementsByClassName('wrapper')[0];
- parent.innerHTML = PAGE(myTest);
+let parent = document.getElementsByClassName('wrapper')[0];
+ parent.innerHTML = page(myTest);
 
 // ставимо колбек на клік мишкою по кнопці перевірити результат
-var btn = document.getElementById('check_button');
+let btn = document.getElementById('check_button');
 btn.addEventListener("click", function(event) {
   showResults();// показуємо результат
   event.preventDefault(); // так як у нас ставиться форма, зробимо щоб сторінка не перегружалася
 });
 
 // реалізація модлаьного вікна
-var btnTestOk = document.getElementsByClassName('test-modal__click')[0];
+let btnTestOk = document.getElementsByClassName('test-modal__click')[0];
 console.log(btnTestOk);
-var resultsWindow = document.getElementsByClassName('test-modal')[0];
+let resultsWindow = document.getElementsByClassName('test-modal')[0];
     btnTestOk.addEventListener("click", function() {
     resultsWindow.setAttribute('style', 'display: none;');
 });
-var testResultMassage = document.getElementsByClassName("test-message")[0];
+let testResultMassage = document.getElementsByClassName("test-message")[0];
 
 // функція, яка показує результат
 function showResults() {
-  var elems = document.getElementsByTagName("input");
-  var res = Array.from(elems, x => x.checked);
-  var tmp = answers.length;
+  let elems = document.getElementsByTagName("input");
+  let res = Array.from(elems, x => x.checked);
+  let tmp = answers.length;
 
-  var result = compareArr(answers, res, tmp);
+  let result = compareArr(answers, res, tmp);
 
      if(result) {
         testResultMassage.innerHTML = 'Well done, you scored 5/5';
@@ -106,8 +106,8 @@ resultsWindow.setAttribute('style', 'display: block;');
 }
 
 //функція, яка порівнює два масиви
-var compareArr = (arr1, arr2, arrayLength) => {
-  for (var i = 0; i < arrayLength; i++) {
+let compareArr = (arr1, arr2, arrayLength) => {
+  for (let i = 0; i < arrayLength; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
     }
