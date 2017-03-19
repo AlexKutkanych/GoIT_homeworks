@@ -35,8 +35,9 @@ $(function() {
 
     $("#find_form").keypress(function(e) {
         if (e.which === 13) {
+            e.preventDefault();
             search_image();
-        }
+        } 
     });
 
     // search_image('cat');
