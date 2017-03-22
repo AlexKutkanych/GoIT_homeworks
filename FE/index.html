@@ -13,12 +13,14 @@
       <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
     <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script> <!--ПІДКЛЮЧИТИ ФАЙЛ!!!!!-->
     <script type="text/javascript" src="js/j-carousel.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> <!--Masonry cdn-->
-    <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> <!--imagesloaded for Mansory-->
-    <script type="text/javascript" src="js/ajax_find.js"></script>
+    <script src="js/masonry-min.js"></script> <!--Masonry file-->
+    <script src="js/imagesloaded.js"></script> <!--Masonry file-->
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/ajax_find.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
     <title>Urlaubsglück</title>
   </head>
   <body>
@@ -129,6 +131,17 @@
       <button type="button" name="button" class="button-partners">See other partners</button>
     </div>
     <div class="wrapper-ideas" id="results">
+      <script type="text/html" id="mypage">
+        <div class="grid">
+          <% for (var i = 0; i < data.length; i++ ) { %>
+            <div class="grid-item">
+              <img src="<%= data[i].webformatURL %>">
+              <span class="desc">I'm liked by <%=data[i].likes%> people</span>
+            </div>
+             <% } %>
+        </div>
+      </script>
+
       <!-- <p class="chapter-name">Discover holiday activity ideas</p>
       <a href="#" class="idea idea1"></a>
       <a href="#"><p class="idea1_desc">Sport and Activity</p></a>
@@ -181,5 +194,7 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
+
 </html>

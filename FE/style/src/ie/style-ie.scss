@@ -253,28 +253,32 @@ a {
 
 //ideas
 .wrapper-ideas {
-  max-width: 960px;
-  margin: 0 auto;
+  @extend .wrapper-top;
   height: 1032px;
   position: relative;
   overflow: hidden;
-
   //for ajax description
   .description {
     display: block;
-    width: 320px;
+    width: 250px;
     color: white;
     position: absolute;
     top: 50%;
     left: 30%;
-    background-color: rgba(0,0,0,0.5);
-    font-family: $main-font;
   }
-
+  //mansory starts here
+  .small {
+    display: block;
+    float: left;
+    position: relative;
+  }
+  .grid {
+  background: red;
+  max-width: 1200px;
+  }
   .mobile-ideas {
     display: none;
   }
-
   .chapter-name {
     text-align: center;
     font-family: $main-font;
@@ -365,45 +369,6 @@ a {
     @extend .idea6_desc;
     left: 746px;
   }
-
-  //masonry
-  .desc {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: $main-font;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .grid {
-    width: 100%;
-  }
-
-  /* clear fix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-
-  /* ---- .grid-item ---- */
-
-  .grid-sizer,
-  .grid-item {
-    width: 33.333%;
-  }
-
-  .grid-item {
-    float: left;
-    position: relative;
-  }
-
-  .grid-item img {
-    display: block;
-    max-width: 100%;
-  }
 }
 
 //find
@@ -458,8 +423,7 @@ footer {
   .wrapper-footer{
   @extend .wrapper-top;
   .name{
-    margin
-    : 39px 0 0 8px;
+    margin: 39px 0 0 8px;
     a {
       float: left;
       text-transform: uppercase;
@@ -523,5 +487,5 @@ footer {
   }
 }
 
-@import "style-768.scss";
-@import "style-320.scss";
+@import "style-ie-768.scss";
+@import "style-ie-320.scss";

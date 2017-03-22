@@ -571,13 +571,12 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
 }
 
 .wrapper-ideas {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   height: 1032px;
   position: relative;
   overflow: hidden;
-  /* clearfix */
-  /* ---- grid-item ---- */
+  /* clear fix */
   /* ---- .grid-item ---- */
 }
 
@@ -590,62 +589,6 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
   left: 30%;
   background-color: rgba(0, 0, 0, 0.5);
   font-family: "montserrat-bold", sans-serif;
-}
-
-.wrapper-ideas .grid {
-  background: #EEE;
-  max-width: 100%;
-  height: 900px;
-  margin: 0 auto;
-}
-
-.wrapper-ideas .grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.wrapper-ideas .grid-item {
-  float: left;
-}
-
-.wrapper-ideas .grid-item--width2 {
-  width: 320px;
-}
-
-.wrapper-ideas .grid-item--width3 {
-  width: 480px;
-}
-
-.wrapper-ideas .grid-item--width4 {
-  width: 640px;
-}
-
-.wrapper-ideas .grid-item--height2 {
-  height: 200px;
-}
-
-.wrapper-ideas .grid-item--height3 {
-  height: 260px;
-}
-
-.wrapper-ideas .grid-item--height4 {
-  height: 360px;
-}
-
-.wrapper-ideas .small {
-  display: block;
-  float: left;
-  position: relative;
-}
-
-.wrapper-ideas .grid-item {
-  float: left;
-}
-
-.wrapper-ideas .grid-item img {
-  display: block;
-  width: 100%;
 }
 
 .wrapper-ideas .mobile-ideas {
@@ -756,6 +699,42 @@ footer .wrapper-footer .wrapper-slogan .button-find:hover {
 
 .wrapper-ideas .idea7_desc {
   left: 746px;
+}
+
+.wrapper-ideas .desc {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: "montserrat-bold", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wrapper-ideas .grid {
+  width: 100%;
+}
+
+.wrapper-ideas .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper-ideas .grid-sizer,
+.wrapper-ideas .grid-item {
+  width: 33.333%;
+}
+
+.wrapper-ideas .grid-item {
+  float: left;
+  position: relative;
+}
+
+.wrapper-ideas .grid-item img {
+  display: block;
+  max-width: 100%;
 }
 
 .wrapper-find {

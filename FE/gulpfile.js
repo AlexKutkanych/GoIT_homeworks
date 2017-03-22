@@ -15,6 +15,12 @@ gulp.task('concat-css', function () {
     .pipe(gulp.dest('style'));
 });
 
+// gulp.task('concat-ie-css', function () {
+//   return gulp.src(['style/dest/fonts.css', 'style/dest/style-ie.css'])
+//     .pipe(concatCss("styles.main.ie.css"))
+//     .pipe(gulp.dest('style'));
+// });
+
 gulp.task('imagemin', () =>
     gulp.src('img/src/*')
         .pipe(imagemin())

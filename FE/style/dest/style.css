@@ -20,10 +20,10 @@ a {
   background: url(../img/dist/main-pic.jpg) no-repeat center;
   background-size: cover; }
 
-.wrapper-top, .wrapper-steps, .wrapper-partner, .wrapper-ideas, .wrapper-find, footer .wrapper-footer {
+.wrapper-top, .wrapper-steps, .wrapper-partner, .wrapper-find, footer .wrapper-footer {
   width: 960px;
   margin: 0 auto; }
-  .wrapper-top .name, .wrapper-steps .name, .wrapper-partner .name, .wrapper-ideas .name, .wrapper-find .name, footer .wrapper-footer .name {
+  .wrapper-top .name, .wrapper-steps .name, .wrapper-partner .name, .wrapper-find .name, footer .wrapper-footer .name {
     float: left;
     text-transform: uppercase;
     font-size: 20px;
@@ -31,12 +31,12 @@ a {
     font-family: "montserrat-bold", sans-serif;
     color: white;
     letter-spacing: 1.2px; }
-    .wrapper-top .name a:hover, .wrapper-steps .name a:hover, .wrapper-partner .name a:hover, .wrapper-ideas .name a:hover, .wrapper-find .name a:hover, footer .wrapper-footer .name a:hover {
+    .wrapper-top .name a:hover, .wrapper-steps .name a:hover, .wrapper-partner .name a:hover, .wrapper-find .name a:hover, footer .wrapper-footer .name a:hover {
       color: #ff4e50; }
-  .wrapper-top .button-wrapper, .wrapper-steps .button-wrapper, .wrapper-partner .button-wrapper, .wrapper-ideas .button-wrapper, .wrapper-find .button-wrapper, footer .wrapper-footer .button-wrapper {
+  .wrapper-top .button-wrapper, .wrapper-steps .button-wrapper, .wrapper-partner .button-wrapper, .wrapper-find .button-wrapper, footer .wrapper-footer .button-wrapper {
     float: right;
     margin: 34px 11px 141px 0; }
-    .wrapper-top .button-wrapper .button-login, .wrapper-steps .button-wrapper .button-login, .wrapper-partner .button-wrapper .button-login, .wrapper-ideas .button-wrapper .button-login, .wrapper-find .button-wrapper .button-login, footer .wrapper-footer .button-wrapper .button-login, .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-ideas .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup {
+    .wrapper-top .button-wrapper .button-login, .wrapper-steps .button-wrapper .button-login, .wrapper-partner .button-wrapper .button-login, .wrapper-find .button-wrapper .button-login, footer .wrapper-footer .button-wrapper .button-login, .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup {
       background-color: transparent;
       border: none;
       width: 74px;
@@ -45,18 +45,18 @@ a {
       font-family: "montserrat-bold", sans-serif;
       border-radius: 18px;
       color: white; }
-    .wrapper-top .button-wrapper .button-login:hover, .wrapper-steps .button-wrapper .button-login:hover, .wrapper-partner .button-wrapper .button-login:hover, .wrapper-ideas .button-wrapper .button-login:hover, .wrapper-find .button-wrapper .button-login:hover, footer .wrapper-footer .button-wrapper .button-login:hover, .wrapper-top .button-wrapper .button-signup:hover, .wrapper-steps .button-wrapper .button-signup:hover, .wrapper-partner .button-wrapper .button-signup:hover, .wrapper-ideas .button-wrapper .button-signup:hover, .wrapper-find .button-wrapper .button-signup:hover, footer .wrapper-footer .button-wrapper .button-signup:hover {
+    .wrapper-top .button-wrapper .button-login:hover, .wrapper-steps .button-wrapper .button-login:hover, .wrapper-partner .button-wrapper .button-login:hover, .wrapper-find .button-wrapper .button-login:hover, footer .wrapper-footer .button-wrapper .button-login:hover, .wrapper-top .button-wrapper .button-signup:hover, .wrapper-steps .button-wrapper .button-signup:hover, .wrapper-partner .button-wrapper .button-signup:hover, .wrapper-find .button-wrapper .button-signup:hover, footer .wrapper-footer .button-wrapper .button-signup:hover {
       background-color: #ff4e50; }
-    .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-ideas .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup {
+    .wrapper-top .button-wrapper .button-signup, .wrapper-steps .button-wrapper .button-signup, .wrapper-partner .button-wrapper .button-signup, .wrapper-find .button-wrapper .button-signup, footer .wrapper-footer .button-wrapper .button-signup {
       width: 90px;
       border: 2px solid white;
       border-radius: 18px; }
-  .wrapper-top .wrapper-slogan, .wrapper-steps .wrapper-slogan, .wrapper-partner .wrapper-slogan, .wrapper-ideas .wrapper-slogan, .wrapper-find .wrapper-slogan, footer .wrapper-footer .wrapper-slogan {
+  .wrapper-top .wrapper-slogan, .wrapper-steps .wrapper-slogan, .wrapper-partner .wrapper-slogan, .wrapper-find .wrapper-slogan, footer .wrapper-footer .wrapper-slogan {
     width: 90%;
     clear: both;
     margin: 0 auto;
     color: white; }
-    .wrapper-top .wrapper-slogan .slogan, .wrapper-steps .wrapper-slogan .slogan, .wrapper-partner .wrapper-slogan .slogan, .wrapper-ideas .wrapper-slogan .slogan, .wrapper-find .wrapper-slogan .slogan, footer .wrapper-footer .wrapper-slogan .slogan {
+    .wrapper-top .wrapper-slogan .slogan, .wrapper-steps .wrapper-slogan .slogan, .wrapper-partner .wrapper-slogan .slogan, .wrapper-find .wrapper-slogan .slogan, footer .wrapper-footer .wrapper-slogan .slogan {
       width: 490px;
       height: 101px;
       font-family: "montserrat-bold", sans-serif;
@@ -64,16 +64,16 @@ a {
       text-transform: uppercase;
       text-align: center;
       margin: 0 0 45px 185px; }
-      .wrapper-top .wrapper-slogan .slogan .slogan-row2, .wrapper-steps .wrapper-slogan .slogan .slogan-row2, .wrapper-partner .wrapper-slogan .slogan .slogan-row2, .wrapper-ideas .wrapper-slogan .slogan .slogan-row2, .wrapper-find .wrapper-slogan .slogan .slogan-row2, footer .wrapper-footer .wrapper-slogan .slogan .slogan-row2 {
+      .wrapper-top .wrapper-slogan .slogan .slogan-row2, .wrapper-steps .wrapper-slogan .slogan .slogan-row2, .wrapper-partner .wrapper-slogan .slogan .slogan-row2, .wrapper-find .wrapper-slogan .slogan .slogan-row2, footer .wrapper-footer .wrapper-slogan .slogan .slogan-row2 {
         margin: 0 0 0 -1px; }
-    .wrapper-top .wrapper-slogan .slogan1, .wrapper-steps .wrapper-slogan .slogan1, .wrapper-partner .wrapper-slogan .slogan1, .wrapper-ideas .wrapper-slogan .slogan1, .wrapper-find .wrapper-slogan .slogan1, footer .wrapper-footer .wrapper-slogan .slogan1 {
+    .wrapper-top .wrapper-slogan .slogan1, .wrapper-steps .wrapper-slogan .slogan1, .wrapper-partner .wrapper-slogan .slogan1, .wrapper-find .wrapper-slogan .slogan1, footer .wrapper-footer .wrapper-slogan .slogan1 {
       width: 405px;
       height: 24px;
       font-size: 24px;
       font-family: "roboto-thin", sans-serif;
       margin: 0 0 41px 233px;
       word-spacing: 1.6px; }
-    .wrapper-top .wrapper-slogan .button-find, .wrapper-steps .wrapper-slogan .button-find, .wrapper-partner .wrapper-slogan .button-find, .wrapper-ideas .wrapper-slogan .button-find, .wrapper-find .wrapper-slogan .button-find, footer .wrapper-footer .wrapper-slogan .button-find {
+    .wrapper-top .wrapper-slogan .button-find, .wrapper-steps .wrapper-slogan .button-find, .wrapper-partner .wrapper-slogan .button-find, .wrapper-find .wrapper-slogan .button-find, footer .wrapper-footer .wrapper-slogan .button-find {
       width: 225px;
       height: 40px;
       background-color: #ff4e50;
@@ -84,7 +84,7 @@ a {
       cursor: pointer;
       margin-left: 319px;
       letter-spacing: 0.4px; }
-    .wrapper-top .wrapper-slogan .button-find:hover, .wrapper-steps .wrapper-slogan .button-find:hover, .wrapper-partner .wrapper-slogan .button-find:hover, .wrapper-ideas .wrapper-slogan .button-find:hover, .wrapper-find .wrapper-slogan .button-find:hover, footer .wrapper-footer .wrapper-slogan .button-find:hover {
+    .wrapper-top .wrapper-slogan .button-find:hover, .wrapper-steps .wrapper-slogan .button-find:hover, .wrapper-partner .wrapper-slogan .button-find:hover, .wrapper-find .wrapper-slogan .button-find:hover, footer .wrapper-footer .wrapper-slogan .button-find:hover {
       color: #14c1f4; }
 
 .wrapper-steps {
@@ -188,23 +188,22 @@ a {
     color: white; }
 
 .wrapper-ideas {
+  max-width: 960px;
+  margin: 0 auto;
   height: 1032px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  /* clear fix */
+  /* ---- .grid-item ---- */ }
   .wrapper-ideas .description {
     display: block;
-    width: 250px;
+    width: 320px;
     color: white;
     position: absolute;
     top: 50%;
-    left: 30%; }
-  .wrapper-ideas .small {
-    display: block;
-    float: left;
-    position: relative; }
-  .wrapper-ideas .grid {
-    background: red;
-    max-width: 1200px; }
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "montserrat-bold", sans-serif; }
   .wrapper-ideas .mobile-ideas {
     display: none; }
   .wrapper-ideas .chapter-name {
@@ -274,6 +273,30 @@ a {
     margin-right: 0; }
   .wrapper-ideas .idea7_desc {
     left: 746px; }
+  .wrapper-ideas .desc {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: "montserrat-bold", sans-serif;
+    font-weight: bold;
+    font-size: 20px; }
+  .wrapper-ideas .grid {
+    width: 100%; }
+  .wrapper-ideas .grid:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .wrapper-ideas .grid-sizer,
+  .wrapper-ideas .grid-item {
+    width: 33.333%; }
+  .wrapper-ideas .grid-item {
+    float: left;
+    position: relative; }
+  .wrapper-ideas .grid-item img {
+    display: block;
+    max-width: 100%; }
 
 .wrapper-find {
   text-align: center; }
@@ -366,21 +389,21 @@ footer {
 
 /*MEDIA 768PX*/
 @media only screen and (min-width: 776px) and (max-width: 976px) {
-  .wrapper-top, .wrapper-steps, .wrapper-partner, .wrapper-ideas, .wrapper-find, footer .wrapper-footer {
+  .wrapper-top, .wrapper-steps, .wrapper-partner, .wrapper-find, footer .wrapper-footer {
     width: 768px;
     margin: 0 auto; }
-    .wrapper-top .name, .wrapper-steps .name, .wrapper-partner .name, .wrapper-ideas .name, .wrapper-find .name, footer .wrapper-footer .name {
+    .wrapper-top .name, .wrapper-steps .name, .wrapper-partner .name, .wrapper-find .name, footer .wrapper-footer .name {
       margin: 44px 0 0 51px; }
-    .wrapper-top .button-wrapper, .wrapper-steps .button-wrapper, .wrapper-partner .button-wrapper, .wrapper-ideas .button-wrapper, .wrapper-find .button-wrapper, footer .wrapper-footer .button-wrapper {
+    .wrapper-top .button-wrapper, .wrapper-steps .button-wrapper, .wrapper-partner .button-wrapper, .wrapper-find .button-wrapper, footer .wrapper-footer .button-wrapper {
       margin: 36px 47px 142px 0; }
-    .wrapper-top .wrapper-slogan, .wrapper-steps .wrapper-slogan, .wrapper-partner .wrapper-slogan, .wrapper-ideas .wrapper-slogan, .wrapper-find .wrapper-slogan, footer .wrapper-footer .wrapper-slogan {
+    .wrapper-top .wrapper-slogan, .wrapper-steps .wrapper-slogan, .wrapper-partner .wrapper-slogan, .wrapper-find .wrapper-slogan, footer .wrapper-footer .wrapper-slogan {
       margin-left: 53px; }
-      .wrapper-top .wrapper-slogan .slogan, .wrapper-steps .wrapper-slogan .slogan, .wrapper-partner .wrapper-slogan .slogan, .wrapper-ideas .wrapper-slogan .slogan, .wrapper-find .wrapper-slogan .slogan, footer .wrapper-footer .wrapper-slogan .slogan {
+      .wrapper-top .wrapper-slogan .slogan, .wrapper-steps .wrapper-slogan .slogan, .wrapper-partner .wrapper-slogan .slogan, .wrapper-find .wrapper-slogan .slogan, footer .wrapper-footer .wrapper-slogan .slogan {
         margin: 0 0 45px 86px; }
-      .wrapper-top .wrapper-slogan .slogan1, .wrapper-steps .wrapper-slogan .slogan1, .wrapper-partner .wrapper-slogan .slogan1, .wrapper-ideas .wrapper-slogan .slogan1, .wrapper-find .wrapper-slogan .slogan1, footer .wrapper-footer .wrapper-slogan .slogan1 {
+      .wrapper-top .wrapper-slogan .slogan1, .wrapper-steps .wrapper-slogan .slogan1, .wrapper-partner .wrapper-slogan .slogan1, .wrapper-find .wrapper-slogan .slogan1, footer .wrapper-footer .wrapper-slogan .slogan1 {
         margin-left: 134px;
         margin-bottom: 40px; }
-      .wrapper-top .wrapper-slogan .button-find, .wrapper-steps .wrapper-slogan .button-find, .wrapper-partner .wrapper-slogan .button-find, .wrapper-ideas .wrapper-slogan .button-find, .wrapper-find .wrapper-slogan .button-find, footer .wrapper-footer .wrapper-slogan .button-find {
+      .wrapper-top .wrapper-slogan .button-find, .wrapper-steps .wrapper-slogan .button-find, .wrapper-partner .wrapper-slogan .button-find, .wrapper-find .wrapper-slogan .button-find, footer .wrapper-footer .wrapper-slogan .button-find {
         margin-left: 220px; }
   .wrapper-steps {
     width: 742px; }
@@ -558,37 +581,37 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 776px) {
   .wrapper-picture {
     height: 540px; }
-    .wrapper-picture .wrapper-top, .wrapper-picture .wrapper-steps, .wrapper-picture .wrapper-partner, .wrapper-picture .wrapper-ideas, .wrapper-picture .wrapper-find, .wrapper-picture footer .wrapper-footer, footer .wrapper-picture .wrapper-footer {
+    .wrapper-picture .wrapper-top, .wrapper-picture .wrapper-steps, .wrapper-picture .wrapper-partner, .wrapper-picture .wrapper-find, .wrapper-picture footer .wrapper-footer, footer .wrapper-picture .wrapper-footer {
       width: 320px;
       position: relative; }
-      .wrapper-picture .wrapper-top .name, .wrapper-picture .wrapper-steps .name, .wrapper-picture .wrapper-partner .name, .wrapper-picture .wrapper-ideas .name, .wrapper-picture .wrapper-find .name, .wrapper-picture footer .wrapper-footer .name, footer .wrapper-picture .wrapper-footer .name {
+      .wrapper-picture .wrapper-top .name, .wrapper-picture .wrapper-steps .name, .wrapper-picture .wrapper-partner .name, .wrapper-picture .wrapper-find .name, .wrapper-picture footer .wrapper-footer .name, footer .wrapper-picture .wrapper-footer .name {
         position: absolute;
         top: 136px;
         left: 68px;
         font-size: 20px; }
-      .wrapper-picture .wrapper-top .button-wrapper, .wrapper-picture .wrapper-steps .button-wrapper, .wrapper-picture .wrapper-partner .button-wrapper, .wrapper-picture .wrapper-ideas .button-wrapper, .wrapper-picture .wrapper-find .button-wrapper, .wrapper-picture footer .wrapper-footer .button-wrapper, footer .wrapper-picture .wrapper-footer .button-wrapper {
+      .wrapper-picture .wrapper-top .button-wrapper, .wrapper-picture .wrapper-steps .button-wrapper, .wrapper-picture .wrapper-partner .button-wrapper, .wrapper-picture .wrapper-find .button-wrapper, .wrapper-picture footer .wrapper-footer .button-wrapper, footer .wrapper-picture .wrapper-footer .button-wrapper {
         width: 214px;
         margin-right: 32px;
         margin-top: 27px;
         margin-bottom: 167px; }
-        .wrapper-picture .wrapper-top .button-wrapper .button-signup, .wrapper-picture .wrapper-steps .button-wrapper .button-signup, .wrapper-picture .wrapper-partner .button-wrapper .button-signup, .wrapper-picture .wrapper-ideas .button-wrapper .button-signup, .wrapper-picture .wrapper-find .button-wrapper .button-signup, .wrapper-picture footer .wrapper-footer .button-wrapper .button-signup, footer .wrapper-picture .wrapper-footer .button-wrapper .button-signup {
+        .wrapper-picture .wrapper-top .button-wrapper .button-signup, .wrapper-picture .wrapper-steps .button-wrapper .button-signup, .wrapper-picture .wrapper-partner .button-wrapper .button-signup, .wrapper-picture .wrapper-find .button-wrapper .button-signup, .wrapper-picture footer .wrapper-footer .button-wrapper .button-signup, footer .wrapper-picture .wrapper-footer .button-wrapper .button-signup {
           width: 90px;
           height: 36px;
           margin-left: 1px;
           border-radius: 18px; }
-      .wrapper-picture .wrapper-top .wrapper-slogan .slogan, .wrapper-picture .wrapper-steps .wrapper-slogan .slogan, .wrapper-picture .wrapper-partner .wrapper-slogan .slogan, .wrapper-picture .wrapper-ideas .wrapper-slogan .slogan, .wrapper-picture .wrapper-find .wrapper-slogan .slogan, .wrapper-picture footer .wrapper-footer .wrapper-slogan .slogan, footer .wrapper-picture .wrapper-footer .wrapper-slogan .slogan {
+      .wrapper-picture .wrapper-top .wrapper-slogan .slogan, .wrapper-picture .wrapper-steps .wrapper-slogan .slogan, .wrapper-picture .wrapper-partner .wrapper-slogan .slogan, .wrapper-picture .wrapper-find .wrapper-slogan .slogan, .wrapper-picture footer .wrapper-footer .wrapper-slogan .slogan, footer .wrapper-picture .wrapper-footer .wrapper-slogan .slogan {
         width: 295px;
         font-size: 30px;
         margin-left: 5px;
         margin-bottom: -21px; }
-      .wrapper-picture .wrapper-top .wrapper-slogan .slogan1, .wrapper-picture .wrapper-steps .wrapper-slogan .slogan1, .wrapper-picture .wrapper-partner .wrapper-slogan .slogan1, .wrapper-picture .wrapper-ideas .wrapper-slogan .slogan1, .wrapper-picture .wrapper-find .wrapper-slogan .slogan1, .wrapper-picture footer .wrapper-footer .wrapper-slogan .slogan1, footer .wrapper-picture .wrapper-footer .wrapper-slogan .slogan1 {
+      .wrapper-picture .wrapper-top .wrapper-slogan .slogan1, .wrapper-picture .wrapper-steps .wrapper-slogan .slogan1, .wrapper-picture .wrapper-partner .wrapper-slogan .slogan1, .wrapper-picture .wrapper-find .wrapper-slogan .slogan1, .wrapper-picture footer .wrapper-footer .wrapper-slogan .slogan1, footer .wrapper-picture .wrapper-footer .wrapper-slogan .slogan1 {
         width: 219px;
         font-size: 18px;
         text-align: center;
         margin-left: 42px;
         margin-bottom: 35px;
         line-height: 22px; }
-      .wrapper-picture .wrapper-top .wrapper-slogan .button-find, .wrapper-picture .wrapper-steps .wrapper-slogan .button-find, .wrapper-picture .wrapper-partner .wrapper-slogan .button-find, .wrapper-picture .wrapper-ideas .wrapper-slogan .button-find, .wrapper-picture .wrapper-find .wrapper-slogan .button-find, .wrapper-picture footer .wrapper-footer .wrapper-slogan .button-find, footer .wrapper-picture .wrapper-footer .wrapper-slogan .button-find {
+      .wrapper-picture .wrapper-top .wrapper-slogan .button-find, .wrapper-picture .wrapper-steps .wrapper-slogan .button-find, .wrapper-picture .wrapper-partner .wrapper-slogan .button-find, .wrapper-picture .wrapper-find .wrapper-slogan .button-find, .wrapper-picture footer .wrapper-footer .wrapper-slogan .button-find, footer .wrapper-picture .wrapper-footer .wrapper-slogan .button-find {
         width: 280px;
         height: 40px;
         margin-left: 12px; }
