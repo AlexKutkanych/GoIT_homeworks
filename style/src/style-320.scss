@@ -145,6 +145,10 @@
   .wrapper-ideas {
     width: 320px;
     height: 967px;
+    .grid-sizer,
+    .grid-item {
+      width: 99%;
+    }
     .mobile-ideas {
       height: 900px;
       width: 300px;

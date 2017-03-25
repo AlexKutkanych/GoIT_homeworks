@@ -122,7 +122,7 @@ a {
         width: 125px;
         height: 125px;
         margin: 0 20px 14px 35px;
-        background: url(../img/dist/partners.png) 0 0 no-repeat; }
+        background: url(../img/sprite.png) 0 0 no-repeat; }
       .wrapper-partner .partners .section1 h4, .wrapper-partner .partners .section2 h4, .wrapper-partner .partners .section3 h4, .wrapper-partner .partners .section4 h4 {
         clear: both;
         color: #333;
@@ -384,7 +384,7 @@ footer {
       display: block;
       width: 110px;
       height: 24px;
-      background: url(../img/dist/designed.png) 0 0 no-repeat;
+      background: url(../img/sprite.png) -68px -125px no-repeat;
       margin-left: 40px; }
 
 /*MEDIA 768PX*/
@@ -476,6 +476,9 @@ footer {
       display: none; }
     .wrapper-ideas .chapter-name {
       margin-left: 6px; }
+    .wrapper-ideas .grid-sizer,
+    .wrapper-ideas .grid-item {
+      width: 49%; }
     .wrapper-ideas .idea {
       margin-left: 14px;
       margin-right: 7px;
@@ -685,6 +688,9 @@ footer {
   .wrapper-ideas {
     width: 320px;
     height: 967px; }
+    .wrapper-ideas .grid-sizer,
+    .wrapper-ideas .grid-item {
+      width: 99%; }
     .wrapper-ideas .mobile-ideas {
       height: 900px;
       width: 300px;
@@ -779,3 +785,8 @@ footer {
       footer .wrapper-footer .designed p {
         margin-left: 55px;
         letter-spacing: 1px; } }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Retina-specific stuff here */
+  .wrapper-picture {
+    background: url(../img/dist/main-pic@2x.svg) no-repeat center; } }

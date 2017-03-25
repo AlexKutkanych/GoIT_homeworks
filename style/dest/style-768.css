@@ -87,6 +87,9 @@
       display: none; }
     .wrapper-ideas .chapter-name {
       margin-left: 6px; }
+    .wrapper-ideas .grid-sizer,
+    .wrapper-ideas .grid-item {
+      width: 49%; }
     .wrapper-ideas .idea {
       margin-left: 14px;
       margin-right: 7px;

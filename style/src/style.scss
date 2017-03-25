@@ -160,7 +160,7 @@ a {
         width: 125px;
         height: 125px;
         margin: 0 20px 14px 35px;
-        background: url(../img/dist/partners.png) 0 0 no-repeat;
+        background: url(../img/sprite.png) 0 0 no-repeat;
       }
       h4 {
         clear: both;
@@ -516,7 +516,7 @@ footer {
       display: block;
       width: 110px;
       height: 24px;
-      background: url(../img/dist/designed.png) 0 0 no-repeat;
+      background: url(../img/sprite.png) -68px -125px no-repeat;
       margin-left: 40px;
     }
   }
@@ -525,3 +525,4 @@ footer {
 
 @import "style-768.scss";
 @import "style-320.scss";
+@import "retina.scss";

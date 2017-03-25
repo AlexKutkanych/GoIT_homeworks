@@ -49,7 +49,8 @@ gulp.task('imagemin', () =>
 gulp.task('sprite', function () {
   var spriteData = gulp.src('img/dist/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
-    cssName: 'sprite.css'
+    cssName: 'sprite.css',
+    padding: 10
   }));
   return spriteData.pipe(gulp.dest('img'));
 });

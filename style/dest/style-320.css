@@ -106,6 +106,9 @@
   .wrapper-ideas {
     width: 320px;
     height: 967px; }
+    .wrapper-ideas .grid-sizer,
+    .wrapper-ideas .grid-item {
+      width: 99%; }
     .wrapper-ideas .mobile-ideas {
       height: 900px;
       width: 300px;

@@ -25,16 +25,17 @@
     top: 152px;
     left: 21px;
     width: 30px;
-    height: 56px;
-    background: url(../img/dist/arrows.png) 0 0 no-repeat; }
+    height: 65px;
+    background: url(../img/sprite.png) 0 0 no-repeat;
+    background-position: 0px -125px; }
   .jcarousel-wrapper1 .jcarousel-control-next, .jcarousel-wrapper2 .jcarousel-control-next, .jcarousel-wrapper3 .jcarousel-control-next {
     position: absolute;
     top: 152px;
     right: 20px;
     width: 30px;
-    height: 56px;
-    background-image: url(../img/dist/arrows.png);
-    background-position: 31px 0; }
+    height: 65px;
+    background-image: url(../img/sprite.png);
+    background-position: -38px -125px; }
 
 .jcarousel-wrapper2 {
   left: 331px; }
