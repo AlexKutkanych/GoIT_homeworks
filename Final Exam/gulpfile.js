@@ -57,6 +57,6 @@ gulp.task('sprite', function () {
 });
 
 //Watch task
-gulp.task('sass-w',function() {
+gulp.task('default',function() {
     gulp.watch(['style/src/*.scss', 'style/*.css', 'style/dest/*.css', 'img/dest/*.png', 'img/src/*.png', 'img/dest/*.jpg', 'img/src/*.jpg'], ['concat-css', 'minify-css', 'sass', 'concat-js', 'minify-js','imagemin', 'sprite']);
 });
